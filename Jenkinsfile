@@ -8,4 +8,11 @@ pipeline {
             }
         }
     }
+    stages {
+        stage('setup') {
+            steps {
+                sh "npm install -g newman"
+            }
+        }
+    }
 }
