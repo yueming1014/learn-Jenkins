@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World!!! happy everyday'
+                echo 'Hello World'
             }
         }
-        stage('setup') {
+        stage('run a collection') {
             steps {
-                sh "npm install -g newman"
+                sh "newman run .\collections\runNewmanExample.postman_collection.json"
             }
         }
     }

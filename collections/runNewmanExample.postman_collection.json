@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "8000cc79-daae-4566-beec-604016f08a9b",
+		"name": "runNewmanExample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://baidu.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://baidu.com",
+					"protocol": "http",
+					"host": [
+						"baidu",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
