@@ -9,7 +9,7 @@ pipeline {
         }
         stage('run a collection') {
             steps {
-                sh "newman run ./\collections/\runNewmanExample.postman_collection.json"
+                sh "newman run ./collections/runNewmanExample.postman_collection.json"
             }
         }
     }
