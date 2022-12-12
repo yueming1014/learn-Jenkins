@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('stage 1') {
             steps {
-                sh "newman run ./Cloning-Disabled.postman_collection.json -e ./Advanced_Analysis.postman_environment.json"
+                sh "newman run ./Cloning-Disabled.postman_collection.json -e ./environment.json"
             //   script {
             //     runNewmanStage("API 2.0 Perm Suite -- Cloning Disabled.postman_collection.json")
             //    }
