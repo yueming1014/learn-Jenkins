@@ -1,5 +1,5 @@
 def runNewmanStage(collectionFile, environmentFile) {
-  sh "newman run ${collectionFile} -e ${environmentFile}"
+  sh "newman run ./${collectionFile} -e ./${environmentFile}"
 }
 
 pipeline {
