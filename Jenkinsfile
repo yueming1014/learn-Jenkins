@@ -1,6 +1,6 @@
-// def runNewmanStage(collectionFile, environmentFile) {
-//   sh "newman run ./${collectionFile} -e ./${environmentFile}"
-// }
+def runNewmanStage(collectionFileName, environmentFileName) {
+  sh "newman run ./collections/${collectionFile} -e ./collections/${environmentFile}"
+}
 
 pipeline {
     agent any
@@ -8,10 +8,10 @@ pipeline {
     stages {
         stage('stage 1') {
             steps {
-                sh "newman run ./collections/Cloning-Disabled.postman_collection.json -e ./collections/environment.json"
-            //   script {
-            //     runNewmanStage("API 2.0 Perm Suite -- Cloning Disabled.postman_collection.json")
-            //    }
+                // sh "newman run ./collections/Cloning-Disabled.postman_collection.json -e ./collections/environment.json"
+              script {
+                runNewmanStage("Cloning-Disabled.postman_collection.json", "environment.json")
+               }
             }
         }
     }
