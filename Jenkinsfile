@@ -2,7 +2,7 @@ pipeline {
     agent any
 
    environment {
-      EMAILLIST="wqin@beckman.com" 
+      EMAILLIST="wqin@beckman.com yueming1014@126.com" 
     }
   
     stages {
