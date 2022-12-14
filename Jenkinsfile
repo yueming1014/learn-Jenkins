@@ -33,7 +33,7 @@ pipeline {
               // script {
               //   runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")
               //  }
-              sh "echo hello"
+              echo 'Hello World'
             }
         }
     }
