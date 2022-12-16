@@ -33,6 +33,7 @@ pipeline {
       steps {
         // runOneCollection("${STAGE_TEST}", "${ENVIRONMENT_FILE_NAME}")
         sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra --reporter-htmlextra-export newman/"
+        sleep(3)
       }
     }
   }
