@@ -33,14 +33,14 @@ pipeline {
       steps {
         // runOneCollection("${STAGE_TEST}", "${ENVIRONMENT_FILE_NAME}")
         sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra --reporter-htmlextra-export newman/"
-        sleep(3)
       }
     }
   }
 
   post {
     always {
-      archiveArtifacts artifacts: "${env.WORKSPACE}/newman/report.html", followSymlinks: false
+      // archiveArtifacts artifacts: "${env.WORKSPACE}/newman/report.html", followSymlinks: false
+      archiveArtifacts artifacts: "newman/report.html", followSymlinks: false
       emailext (
         to: "${EMAILLIST}",
         subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
