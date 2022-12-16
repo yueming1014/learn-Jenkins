@@ -7,9 +7,9 @@ pipeline {
 
   options { timeout(time: 15, unit: 'MINUTES') }
 
-  triggers {
-    cron(0 8 * * 1-5)
-  }
+  // triggers {
+  //   cron(0 8 * * 1-5)
+  // }
 
   environment {
     ENVIRONMENT_FILE_NAME="Environment-Variables.json"
