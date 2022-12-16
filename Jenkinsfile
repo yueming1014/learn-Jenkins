@@ -48,5 +48,3 @@ pipeline {
     }
   }
 }
-
-archiveArtifacts artifacts: 'target/*.jar, target/*.war'
