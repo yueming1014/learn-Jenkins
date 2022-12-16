@@ -39,6 +39,7 @@ pipeline {
 
   post {
     always {
+      archiveArtifacts artifacts: "${env.WORKSPACE}/report.html", followSymlinks: false
       emailext (
         to: "${EMAILLIST}",
         subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
@@ -47,3 +48,5 @@ pipeline {
     }
   }
 }
+
+archiveArtifacts artifacts: 'target/*.jar, target/*.war'
