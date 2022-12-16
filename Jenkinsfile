@@ -32,7 +32,7 @@ pipeline {
     stage('Advanced Analysis') {
       steps {
         // runOneCollection("${STAGE_TEST}", "${ENVIRONMENT_FILE_NAME}")
-        sh "newman run ./collections/${collectionFileName} --reporters cli,htmlextra --reporter-htmlextra-export newman/report.html"
+        sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra --reporter-htmlextra-export newman/report.html"
       }
     }
   }
