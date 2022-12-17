@@ -14,7 +14,7 @@ pipeline {
   environment {
     ENVIRONMENT_FILE_NAME="Environment-Variables.json"
 
-    EMAILLIST="wqin@beckman.com" 
+    EMAILLIST="wqin@beckman.com yueming1014@126.com" 
 
     STAGE_ADVANCED_ANALYSIS="Advanced-Analysis.postman_collection.json"
     STAGE_CLONING_DISABLED_VIEW_ONLY="Cloning-Disabled-View Only DS.postman_collection.json"
@@ -39,7 +39,7 @@ pipeline {
 
   post {
     always {
-      archiveArtifacts artifacts: "newman", followSymlinks: false
+      archiveArtifacts artifacts: "newman/report.html", followSymlinks: false
       emailext (
         to: "${EMAILLIST}",
         subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
