@@ -40,47 +40,47 @@ pipeline {
       }
     }
 
-    stage('Cloning Disabled') {
-      steps {
-        runOneCollection("${STAGE_CLONING_DISABLED}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
+    // stage('Cloning Disabled') {
+    //   steps {
+    //     runOneCollection("${STAGE_CLONING_DISABLED}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
 
-    stage('Data Service') {
-      steps {
-        runOneCollection("${STAGE_DATA_SERVICE}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
+    // stage('Data Service') {
+    //   steps {
+    //     runOneCollection("${STAGE_DATA_SERVICE}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
 
-    stage('Illustrations DS') {
-      steps {
-        runOneCollection("${STAGE_FCS_FILE_ILLUSTRATIONS_DS}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
+    // stage('Illustrations DS') {
+    //   steps {
+    //     runOneCollection("${STAGE_FCS_FILE_ILLUSTRATIONS_DS}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
 
-    stage('FCS Files Only View') {
-      steps {
-        runOneCollection("${STAGE_FCS_FILES_ONLY_VIEW_ONLY}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
+    // stage('FCS Files Only View') {
+    //   steps {
+    //     runOneCollection("${STAGE_FCS_FILES_ONLY_VIEW_ONLY}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
 
-    stage('Full Clone Illustrations DS') {
-      steps {
-        runOneCollection("${STAGE_FULL_CLONE_ILLUSTRATIONS_DS}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
+    // stage('Full Clone Illustrations DS') {
+    //   steps {
+    //     runOneCollection("${STAGE_FULL_CLONE_ILLUSTRATIONS_DS}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
 
-    stage('Full Clone Illustrations') {
-      steps {
-        runOneCollection("${STAGE_FULL_CLONE_ILLUSTRATIONS}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
+    // stage('Full Clone Illustrations') {
+    //   steps {
+    //     runOneCollection("${STAGE_FULL_CLONE_ILLUSTRATIONS}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
 
-    stage('Full Clone View Only DS') {
-      steps {
-        runOneCollection("${STAGE_FULL_CLONE_VIEW_ONLY_DS}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
+    // stage('Full Clone View Only DS') {
+    //   steps {
+    //     runOneCollection("${STAGE_FULL_CLONE_VIEW_ONLY_DS}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
   }
 
   post {
