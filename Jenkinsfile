@@ -32,14 +32,13 @@ pipeline {
     stage('Advanced Analysis') {
       steps {
         // runOneCollection("${STAGE_TEST}", "${ENVIRONMENT_FILE_NAME}")
-        sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra --reporter-htmlextra-export newman/"
+        sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra,json,junit --reporter-htmlextra-export newman/"
       }
     }
   }
 
   post {
     always {
-      // archiveArtifacts artifacts: "${env.WORKSPACE}/newman/report.html", followSymlinks: false
       archiveArtifacts artifacts: "newman/report.html", followSymlinks: false
       emailext (
         to: "${EMAILLIST}",
