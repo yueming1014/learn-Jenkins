@@ -7,9 +7,9 @@ pipeline {
 
   options { timeout(time: 15, unit: 'MINUTES') }
 
-  // triggers {
-  //   cron(0 8 * * 1-5)
-  // }
+  triggers {
+    cron('0 8 * * 1-5')
+  }
 
   environment {
     ENVIRONMENT_FILE_NAME="Environment-Variables.json"
@@ -29,7 +29,7 @@ pipeline {
   }
   
   stages {
-    stage('setup') {
+    stage('Clear Workspace') {
       steps {
         sh "rm -r ${env.WORKSPACE}/newman"
       }
@@ -37,8 +37,13 @@ pipeline {
   
     stage('Advanced Analysis') {
       steps {
-        // runOneCollection("${STAGE_TEST}", "${ENVIRONMENT_FILE_NAME}")
-        sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
+        runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")
+      }
+    }
+
+    stage('Cloning Disabled View Only') {
+      steps {
+        runOneCollection("${STAGE_CLONING_DISABLED_VIEW_ONLY}", "${ENVIRONMENT_FILE_NAME}")
       }
     }
   }
