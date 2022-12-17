@@ -1,5 +1,11 @@
 def runOneCollection(collectionFileName, environmentFileName) {
-  sh "newman run ./collections/${collectionFileName} -e ./collections/${environmentFileName} -r cli,htmlextra,junit --reporter-htmlextra-export newman/${collectionFileName}/report.html --reporter-junit-export newman/${collectionFileName}/report.xml"
+    catchError (
+      buildResult: 'FAILURE',
+      stageResult: 'FAILURE',
+      catchInterruptions: false
+    ) {
+        sh "newman run ./collections/${collectionFileName} -e ./collections/${environmentFileName} -r cli,htmlextra,junit --reporter-htmlextra-export newman/${collectionFileName}/report.html --reporter-junit-export newman/${collectionFileName}/report.xml"
+    }
 }
 
 pipeline {
@@ -30,23 +36,10 @@ pipeline {
   }
   
   stages {
-    // stage('test') {
-    //   steps {
-    //     sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
-    //   }
-    // }
-    // stage('Clear Workspace') {
-    //   steps {
-    //     sh "rm -r ${env.WORKSPACE}/newman"
-    //   }
-    // }
-  
     stage('Advanced Analysis') {
       steps {
         catchError {
-          script {
           runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")
-          }
         }
       }
     }
@@ -59,11 +52,9 @@ pipeline {
 
     stage('Cloning Disabled') {
       steps {
-        catchError {
           script {
             runOneCollection("${STAGE_ADVANCED_ANALYSIS_2}", "${ENVIRONMENT_FILE_NAME}")
           }
-        }
       }
     }
 
