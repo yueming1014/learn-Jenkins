@@ -43,8 +43,10 @@ pipeline {
   
     stage('Advanced Analysis') {
       steps {
-        script {
+        catchError {
+          script {
           runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")
+          }
         }
       }
     }
@@ -57,8 +59,10 @@ pipeline {
 
     stage('Cloning Disabled') {
       steps {
-        script {
-          runOneCollection("${STAGE_ADVANCED_ANALYSIS_2}", "${ENVIRONMENT_FILE_NAME}")
+        catchError {
+          script {
+            runOneCollection("${STAGE_ADVANCED_ANALYSIS_2}", "${ENVIRONMENT_FILE_NAME}")
+          }
         }
       }
     }
