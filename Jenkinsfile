@@ -17,11 +17,12 @@ pipeline {
     EMAILLIST="wqin@beckman.com yueming1014@126.com" 
 
     STAGE_ADVANCED_ANALYSIS="Advanced-Analysis.postman_collection.json"
+    STAGE_ADVANCED_ANALYSIS_2="Advanced-Analysis-2.postman_collection.json"
     STAGE_CLONING_DISABLED_VIEW_ONLY="Cloning-Disabled-View-Only-DS.postman_collection.json"
     STAGE_CLONING_DISABLED="Cloning-Disabled.postman_collection.json"
     STAGE_DATA_SERVICE="Data-Service.postman_collection.json"
     STAGE_FCS_FILE_ILLUSTRATIONS_DS="FCS-files-Illustrations-DS.postman_collection.json"
-    STAGE_FCS_FILES_ONLY_VIEW_ONLY="FCS-Files-Only-View Only.postman_collection.json"
+    STAGE_FCS_FILES_ONLY_VIEW_ONLY="FCS-Files-Only-View-Only.postman_collection.json"
     STAGE_FULL_CLONE_ILLUSTRATIONS_DS="Full-Clone-Illustrations-DS.postman_collection.json"
     STAGE_FULL_CLONE_ILLUSTRATIONS="Full-Clone-Illustrations.postman_collection.json"
     STAGE_FULL_CLONE_VIEW_ONLY_DS="Full-Clone-View-Only-DS.postman_collection.json"
@@ -54,7 +55,7 @@ pipeline {
 
     stage('Cloning Disabled') {
       steps {
-        runOneCollection("${STAGE_CLONING_DISABLED}", "${ENVIRONMENT_FILE_NAME}")
+        runOneCollection("${STAGE_ADVANCED_ANALYSIS_2}", "${ENVIRONMENT_FILE_NAME}")
       }
     }
 
