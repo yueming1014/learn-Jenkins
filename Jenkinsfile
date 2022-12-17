@@ -34,6 +34,11 @@ pipeline {
     //     sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
     //   }
     // }
+    stage('Clear Workspace') {
+      steps {
+        sh "rm -r ${env.WORKSPACE}/newman"
+      }
+    }
   
     stage('Advanced Analysis') {
       steps {
