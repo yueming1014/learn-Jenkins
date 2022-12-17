@@ -29,6 +29,12 @@ pipeline {
   }
   
   stages {
+    stage('setup') {
+      steps {
+        sh "rm -r ${env.WORKSPACE}/newman"
+      }
+    }
+  
     stage('Advanced Analysis') {
       steps {
         // runOneCollection("${STAGE_TEST}", "${ENVIRONMENT_FILE_NAME}")
