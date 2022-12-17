@@ -46,17 +46,17 @@ pipeline {
       }
     }
 
-    stage('Cloning Disabled View Only') {
-      steps {
-        runOneCollection("${STAGE_CLONING_DISABLED_VIEW_ONLY}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
-
-    // stage('Cloning Disabled') {
+    // stage('Cloning Disabled View Only') {
     //   steps {
-    //     runOneCollection("${STAGE_CLONING_DISABLED}", "${ENVIRONMENT_FILE_NAME}")
+    //     runOneCollection("${STAGE_CLONING_DISABLED_VIEW_ONLY}", "${ENVIRONMENT_FILE_NAME}")
     //   }
     // }
+
+    stage('Cloning Disabled') {
+      steps {
+        runOneCollection("${STAGE_CLONING_DISABLED}", "${ENVIRONMENT_FILE_NAME}")
+      }
+    }
 
     // stage('Data Service') {
     //   steps {
