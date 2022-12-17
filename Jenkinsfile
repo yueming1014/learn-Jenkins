@@ -95,7 +95,7 @@ pipeline {
       archiveArtifacts artifacts: "newman/report.html, newman/report.xml", followSymlinks: false
       emailext (
         to: "${EMAILLIST}",
-        from: "yueming1014@126.com"
+        from: "yueming1014@126.com",
         subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
         body: "pls pay attention to API test results."
       )
