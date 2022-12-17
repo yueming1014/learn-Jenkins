@@ -1,5 +1,5 @@
 def runOneCollection(collectionFileName, environmentFileName) {
-  sh "newman run ./collections/${collectionFileName} -e ./collections/${environmentFileName} --reporters cli htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
+  sh "newman run ./collections/${collectionFileName} -e ./collections/${environmentFileName} -r cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
 }
 
 pipeline {
@@ -38,7 +38,7 @@ pipeline {
     stage('Advanced Analysis') {
       steps {
         // runOneCollection("${STAGE_TEST}", "${ENVIRONMENT_FILE_NAME}")
-        sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra,json,junit --reporter-htmlextra-export newman/"
+        sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
       }
     }
   }
