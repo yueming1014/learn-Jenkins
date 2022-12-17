@@ -1,5 +1,5 @@
 def runOneCollection(collectionFileName, environmentFileName) {
-  sh "newman run ./collections/${collectionFileName} -e ./collections/${environmentFileName} -r cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
+  sh "newman run ./collections/${collectionFileName} -e ./collections/${environmentFileName} -r cli,htmlextra,junit --reporter-htmlextra-export newman/${collectionFileName}/report.html --reporter-junit-export newman/${collectionFileName}/report.xml"
 }
 
 pipeline {
@@ -92,7 +92,7 @@ pipeline {
 
   post {
     always {
-      archiveArtifacts artifacts: "newman/report.html, newman/report.xml", followSymlinks: false
+      archiveArtifacts artifacts: "newman/**/report.html, newman/**/report.xml", followSymlinks: false
       emailext (
         to: "${EMAILLIST}",
         from: "yueming1014@126.com",
