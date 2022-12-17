@@ -25,20 +25,27 @@ pipeline {
     STAGE_FULL_CLONE_ILLUSTRATIONS_DS="Full-Clone-Illustrations DS.postman_collection.json"
     STAGE_FULL_CLONE_ILLUSTRATIONS="Full-Clone-Illustrations.postman_collection.json"
     STAGE_FULL_CLONE_VIEW_ONLY_DS="Full-Clone-View Only DS.postman_collection.json"
+    STAGE_TEST="demo.json"
   }
   
   stages {
-    stage('Advanced Analysis') {
+    stage('test') {
       steps {
-        runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")
+        sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
       }
     }
+  
+    // stage('Advanced Analysis') {
+    //   steps {
+    //     runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
 
-    stage('Cloning Disabled View Only') {
-      steps {
-        runOneCollection("${STAGE_CLONING_DISABLED_VIEW_ONLY}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
+    // stage('Cloning Disabled View Only') {
+    //   steps {
+    //     runOneCollection("${STAGE_CLONING_DISABLED_VIEW_ONLY}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
 
     // stage('Cloning Disabled') {
     //   steps {
