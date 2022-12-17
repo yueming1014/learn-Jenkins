@@ -39,7 +39,7 @@ pipeline {
 
   post {
     always {
-      archiveArtifacts artifacts: "newman/report.html", followSymlinks: false
+      archiveArtifacts artifacts: "newman", followSymlinks: false
       emailext (
         to: "${EMAILLIST}",
         subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
