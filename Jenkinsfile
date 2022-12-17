@@ -29,23 +29,23 @@ pipeline {
   }
   
   stages {
-    // stage('test') {
+    stage('test') {
+      steps {
+        sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
+      }
+    }
+  
+    // stage('Advanced Analysis') {
     //   steps {
-    //     sh "newman run ./collections/${STAGE_TEST} --reporters cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml"
+    //     runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")
     //   }
     // }
-  
-    stage('Advanced Analysis') {
-      steps {
-        runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
 
-    stage('Cloning Disabled View Only') {
-      steps {
-        runOneCollection("${STAGE_CLONING_DISABLED_VIEW_ONLY}", "${ENVIRONMENT_FILE_NAME}")
-      }
-    }
+    // stage('Cloning Disabled View Only') {
+    //   steps {
+    //     runOneCollection("${STAGE_CLONING_DISABLED_VIEW_ONLY}", "${ENVIRONMENT_FILE_NAME}")
+    //   }
+    // }
 
     // stage('Cloning Disabled') {
     //   steps {
