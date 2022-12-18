@@ -1,8 +1,7 @@
 def runOneCollection(collectionFileName, environmentFileName) {
     catchError (
       buildResult: 'FAILURE',
-      stageResult: 'FAILURE',
-      catchInterruptions: false
+      stageResult: 'FAILURE'
     ) {
         sh "newman run ./collections/${collectionFileName} -e ./collections/${environmentFileName} -r cli,htmlextra,junit --reporter-htmlextra-export newman/${collectionFileName}/report.html --reporter-junit-export newman/${collectionFileName}/report.xml"
     }
@@ -11,7 +10,7 @@ def runOneCollection(collectionFileName, environmentFileName) {
 pipeline {
   agent any
 
-  options { timeout(time: 15, unit: 'MINUTES') }
+  options { timeout(time: 10, unit: 'MINUTES') }
 
   triggers {
     cron('0 8 * * 1-5')
@@ -37,9 +36,7 @@ pipeline {
   stages {
     stage('Advanced Analysis') {
       steps {
-        catchError {
           runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")
-        }
       }
     }
 
