@@ -1,7 +1,8 @@
 def runOneCollection(collectionFileName, environmentFileName) {
     catchError (
       buildResult: 'FAILURE',
-      stageResult: 'FAILURE'
+      stageResult: 'FAILURE',
+      catchInterruptions: false
     ) {
         sh "newman run ./collections/${collectionFileName} -e ./collections/${environmentFileName} -r cli,htmlextra,junit --reporter-htmlextra-export newman/${collectionFileName}/report.html --reporter-junit-export newman/${collectionFileName}/report.xml"
     }
@@ -48,9 +49,7 @@ pipeline {
 
     stage('Cloning Disabled') {
       steps {
-          script {
-            runOneCollection("${STAGE_CLONING_DISABLED}", "${ENVIRONMENT_FILE_NAME}")
-          }
+        runOneCollection("${STAGE_CLONING_DISABLED}", "${ENVIRONMENT_FILE_NAME}")
       }
     }
 
