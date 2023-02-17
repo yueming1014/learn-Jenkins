@@ -22,6 +22,7 @@ pipeline {
 
     EMAILLIST="wqin@beckman.com yueming1014@126.com" 
 
+    STAGE_Automatic_Gating="Automatic-Gating.postman_collection.json"
     STAGE_ADVANCED_ANALYSIS="Advanced-Analysis.postman_collection.json"
     STAGE_CLONING_DISABLED_VIEW_ONLY="Cloning-Disabled-View-Only-DS.postman_collection.json"
     STAGE_CLONING_DISABLED="Cloning-Disabled.postman_collection.json"
@@ -35,6 +36,12 @@ pipeline {
   }
   
   stages {
+    stage('Auto Gating') {
+      steps {
+          runOneCollection("${STAGE_Automatic_Gating}", "${ENVIRONMENT_FILE_NAME}")
+      }
+    }
+
     stage('Advanced Analysis') {
       steps {
           runOneCollection("${STAGE_ADVANCED_ANALYSIS}", "${ENVIRONMENT_FILE_NAME}")

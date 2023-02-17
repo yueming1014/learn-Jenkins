@@ -1,1040 +1,891 @@
 {
-	"id": "85adda5b-b172-4a6a-82c6-7384b7ca17b2",
-	"name": "Advanced_Analysis",
+	"id": "72693fe1-9759-4cd1-ae72-ef56d629eb3b",
+	"name": "Autogating Environment",
 	"values": [
 		{
 			"key": "cyto_server",
-			"value": "qa-titan.cytobank.org",
+			"value": "perf-metis-b.cytobank.org",
+			"type": "default",
 			"enabled": true
 		},
 		{
-			"key": "adminuser",
-			"value": "Roopali1",
-			"enabled": true
-		},
-		{
-			"key": "adminpassword",
-			"value": "!Password1",
+			"key": "server",
+			"value": "perf-metis-b",
+			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "user_name",
 			"value": "seleniumTester",
+			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "userpassword",
 			"value": "YjBunA6hQDDz20D4",
+			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "admin_jwt",
-			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwYWFlZGUzNGI3NmUwYzg1MjBmY2U1YTA4MzJkOTZlYSIsImV4cCI6MTU2NjQ5MzE5MywidXNlcl9pZCI6MTUsImF1ZCI6ImN5dG9iYW5rX2FwaV92MV91c2VycyIsImlhdCI6MTU2NjQ2NDM5MywiaXNzIjoiaHR0cHM6Ly9xYS1hcmllbC5jeXRvYmFuay5vcmcvIiwibmJmIjoxNTY2NDY0MzkzLCJzdWIiOiJjeXRvYmFua19hcGlfdjEifQ.nHBJq65S1r07CeaCTdnhIkEBVG6KUZt8g7QsdIkLsm8",
+			"value": "",
+			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "user_jwt",
-			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxYWFlNmU0OGNjNmU2YjE4ZjIzNTg4OThmNmQ1YWYyOSIsImlhdCI6MTY0MTM3MDMxOSwiZXhwIjoxNjQxMzk5MTE5LCJ1c2VyX2lkIjo1NiwibmJmIjoxNjQxMzcwMzE5LCJhdWQiOiJjeXRvYmFua19hcGlfdjFfdXNlcnMiLCJpc3MiOiJodHRwczovL3FhLXRpdGFuLmN5dG9iYW5rLm9yZy8iLCJzdWIiOiJjeXRvYmFua19hcGlfdjEifQ.cdA52SSFyOBNfQwqQNuE1-vqoyp1zoepTSBrFZ7F5VU",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ODc2MjJmN2EzOTNjYmY1YTA0MmM1Y2NlMmM5MDdmOCIsImlhdCI6MTY1OTA4NzE1NCwiZXhwIjoxNjU5MTE1OTU0LCJ1c2VyX2lkIjo1LCJuYmYiOjE2NTkwODcxNTQsImF1ZCI6ImN5dG9iYW5rX2FwaV92MV91c2VycyIsImlzcyI6Imh0dHBzOi8vZGV2LW9yY3VzLmN5dG9iYW5rLm9yZy8iLCJzdWIiOiJjeXRvYmFua19hcGlfdjEifQ.4vDaJF1fQeT-wpSgZR3SOCcv7nYXRk3EMJv4BqcNJvU",
+			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "userid",
 			"value": "5",
-			"enabled": true
-		},
-		{
-			"key": "experiment_id",
-			"value": "152",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_1",
-			"value": "92905",
+			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "other_usersid",
 			"value": "4",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "cloned_exp_id",
-			"value": "3552",
+			"key": "ANALYSIS_TYPE_TRAIN",
+			"value": "auto_gate_train",
+			"type": "default",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_2",
-			"value": "92906",
+			"key": "ANALYSIS_TYPE_INFERENCE",
+			"value": "auto_gate_inference",
+			"type": "default",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_3",
-			"value": "92907",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_4",
-			"value": "92908",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_5",
-			"value": "92909",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_6",
-			"value": "92899",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_7",
-			"value": "92900",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_8",
-			"value": "92901",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_9",
-			"value": "92902",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_10",
-			"value": "92903",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_11",
-			"value": "92904",
-			"enabled": true
-		},
-		{
-			"key": "all_fcs_file_ids",
-			"value": "92905, 92906, 92907, 92908, 92909, 92899, 92900, 92901, 92902, 92903, 92904",
-			"enabled": true
-		},
-		{
-			"key": "gold_std_pbmc_populationsDetails",
-			"value": "{\"populations\":[{\"id\":null,\"name\":\"CD20+ B cells\",\"version\":-1,\"experimentId\":null,\"gateSetId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"gates\":[1,3,5],\"negGates\":[],\"tailoredPerPopulation\":{}}},{\"id\":null,\"name\":\"CD3+ T cells\",\"version\":-1,\"experimentId\":null,\"gateSetId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"gates\":[1,3,4],\"negGates\":[],\"tailoredPerPopulation\":{}}},{\"id\":null,\"name\":\"CD3+CD4+ T cells\",\"version\":-1,\"experimentId\":null,\"gateSetId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"gates\":[1,3,4,7],\"negGates\":[],\"tailoredPerPopulation\":{}}},{\"id\":null,\"name\":\"CD3+CD4- T cells\",\"version\":-1,\"experimentId\":null,\"gateSetId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"gates\":[1,3,4,6],\"negGates\":[],\"tailoredPerPopulation\":{}}},{\"id\":null,\"name\":\"CD33+ monocytes\",\"version\":-1,\"experimentId\":null,\"gateSetId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"gates\":[1,2],\"negGates\":[],\"tailoredPerPopulation\":{}}},{\"id\":null,\"name\":\"CD33- lymphocytes\",\"version\":-1,\"experimentId\":null,\"gateSetId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"gates\":[1,3],\"negGates\":[],\"tailoredPerPopulation\":{}}},{\"id\":null,\"name\":\"intact cells\",\"version\":-1,\"experimentId\":null,\"gateSetId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"gates\":[1],\"negGates\":[],\"tailoredPerPopulation\":{}}}]}",
-			"enabled": true
-		},
-		{
-			"key": "population_1",
-			"value": "intact cells",
-			"enabled": true
-		},
-		{
-			"key": "population_2",
-			"value": "singlets",
-			"enabled": true
-		},
-		{
-			"key": "panel_id",
-			"value": "8776",
-			"enabled": true
-		},
-		{
-			"key": "channel_id_1",
-			"value": "64",
-			"enabled": true
-		},
-		{
-			"key": "channel_id_2",
-			"value": "66",
-			"enabled": true
-		},
-		{
-			"key": "channel_id_3",
-			"value": "67",
-			"enabled": true
-		},
-		{
-			"key": "channel_id_4",
-			"value": "71",
-			"enabled": true
-		},
-		{
-			"key": "compensation_id",
-			"value": "2053",
-			"enabled": true
-		},
-		{
-			"key": "API_CITRUS_EXP",
-			"value": "Science, Bendall et al (Public Version) (20 time-sliced files) For CITRUS API",
-			"enabled": true
-		},
-		{
-			"key": "citrus_exp_id",
-			"value": "142",
+			"key": "experiment_id",
+			"value": "1491",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "exp_version",
-			"value": "33",
+			"value": "29",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "cloned_citrus_exp_id",
-			"value": "2210",
+			"key": "ANALYSIS_ID",
+			"value": "706",
+			"type": "any",
+			"enabled": false
+		},
+		{
+			"key": "fcs_file_id_0",
+			"value": "92916",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_1",
+			"value": "92917",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_2",
+			"value": "92918",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_3",
+			"value": "92919",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_4",
+			"value": "92920",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_5",
+			"value": "92921",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_6",
+			"value": "92922",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_7",
+			"value": "92923",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_8",
+			"value": "92924",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_9",
+			"value": "92925",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_10",
+			"value": "92926",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "fcs_file_id_11",
+			"value": "92927",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "fcs_file_id_12",
-			"value": "7336",
+			"value": "92928",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "fcs_file_id_13",
-			"value": "7337",
+			"value": "92929",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "fcs_file_id_14",
-			"value": "7338",
+			"value": "92930",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "fcs_file_id_15",
-			"value": "7339",
+			"value": "92931",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "fcs_file_id_16",
-			"value": "7340",
+			"value": "92932",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "fcs_file_id_17",
-			"value": "7341",
+			"value": "92933",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "fcs_file_id_18",
-			"value": "7342",
+			"value": "92934",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "fcs_file_id_19",
-			"value": "7343",
+			"value": "92935",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "fcs_file_id_20",
-			"value": "7344",
+			"value": "92936",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_5",
-			"value": "130",
+			"key": "fcs_file_id_21",
+			"value": "92937",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_6",
-			"value": "131",
+			"key": "fcs_file_id_22",
+			"value": "92938",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_7",
-			"value": "133",
+			"key": "fcs_file_id_23",
+			"value": "92939",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_8",
-			"value": "134",
+			"key": "fcs_file_id_24",
+			"value": "92940",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_9",
-			"value": "135",
+			"key": "fcs_file_id_25",
+			"value": "92941",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_10",
-			"value": "136",
+			"key": "fcs_file_id_26",
+			"value": "92942",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_11",
-			"value": "137",
+			"key": "fcs_file_id_27",
+			"value": "92943",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_12",
-			"value": "139",
+			"key": "fcs_file_id_28",
+			"value": "92944",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_13",
-			"value": "145",
+			"key": "fcs_file_id_29",
+			"value": "92945",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_14",
-			"value": "146",
+			"key": "fcs_file_id_30",
+			"value": "92946",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_15",
-			"value": "151",
+			"key": "fcs_file_id_31",
+			"value": "92947",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_16",
-			"value": "153",
+			"key": "fcs_file_id_32",
+			"value": "92948",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "channel_id_17",
-			"value": "160",
+			"key": "fcs_file_id_33",
+			"value": "92949",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "citrus_id",
-			"value": "471",
+			"key": "fcs_file_id_34",
+			"value": "92950",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "citrus_attachment_id",
-			"value": "425",
+			"key": "fcs_file_id_35",
+			"value": "92951",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "visne_id",
-			"value": "567",
+			"key": "fcs_file_id_36",
+			"value": "92952",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "owner_name",
-			"value": "bedrock-tester",
+			"key": "fcs_file_id_37",
+			"value": "92953",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "owner_password",
-			"value": "aithoa4ieMai9mah",
+			"key": "fcs_file_id_38",
+			"value": "92954",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "owner_jwt",
-			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwNWYxMjc0YTUxNDlmY2YxMGM4NThjOTgwNzg3YjYzNCIsImV4cCI6MTU2Nzc3MzEzMCwiYXVkIjoiY3l0b2JhbmtfYXBpX3YxX3VzZXJzIiwidXNlcl9pZCI6MiwiaWF0IjoxNTY3NzQ0MzMwLCJpc3MiOiJodHRwczovL3FhLWFyaWVsLmN5dG9iYW5rLm9yZy8iLCJuYmYiOjE1Njc3NDQzMzAsInN1YiI6ImN5dG9iYW5rX2FwaV92MSJ9.PH_n1Vq7cPC5waniXOu46oyv6xKiopQd9Sfixau1xrI",
+			"key": "fcs_file_id_39",
+			"value": "92955",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "spade_id",
-			"value": "19",
+			"key": "fcs_file_id_40",
+			"value": "92956",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "attachment_id",
-			"value": "8115",
+			"key": "fcs_file_id_41",
+			"value": "92957",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "API_MASTER_EXP",
-			"value": "PBMC (Proper scales) -- From ACS",
+			"key": "fcs_file_id_42",
+			"value": "92958",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "spade_exp_id",
-			"value": "3371",
+			"key": "fcs_file_id_43",
+			"value": "92959",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "newExpName",
-			"value": "New API test experiment-1566806488162",
+			"key": "fcs_file_id_44",
+			"value": "92960",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "new_exp_id",
-			"value": "3624",
+			"key": "fcs_file_id_45",
+			"value": "92961",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "admin_userid",
-			"value": "15",
+			"key": "fcs_file_id_46",
+			"value": "92962",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "email_not_verified_user",
-			"value": "email_not_verified_user1",
+			"key": "fcs_file_id_47",
+			"value": "92963",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "email_not_verified_password",
-			"value": "email_not_verified_user1",
+			"key": "fcs_file_id_48",
+			"value": "92964",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "inactive_user",
-			"value": "API_inactive1",
+			"key": "fcs_file_id_49",
+			"value": "92965",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "inactive_user_password",
-			"value": "API_inactive1",
+			"key": "fcs_file_id_50",
+			"value": "92966",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "nosubscription_user",
-			"value": "nosubscriptionuser1",
+			"key": "fcs_file_id_51",
+			"value": "92967",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "nosubscription_password",
-			"value": "nosubscriptionuser1",
+			"key": "fcs_file_id_52",
+			"value": "92968",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "expired_token",
-			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlMzY2YmVmNGI1ZmRlM2I0YWEzZDU1MzVmYTdkZTJlZCIsImV4cCI6MTQ2NDcwMTg0NSwiYXVkIjoiY3l0b2JhbmtfYXBpX3YxX3VzZXJzIiwidXNlcl9pZCI6MTEwLCJpYXQiOjE0NjQ2NzMwNDUsImlzcyI6Imh0dHBzOi8vZGV2MDEuY3l0b2Jhbmsub3JnLyIsIm5iZiI6MTQ2NDY3MzA0NSwic3ViIjoiY3l0b2JhbmtfYXBpX3YxIn0.elICErhz-PPoEQOSmBo6YlnBz8U5RDjJPh67dFrAu4w",
+			"key": "fcs_file_id_53",
+			"value": "92969",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "sel_cloned_exp_id",
-			"value": "2297",
+			"key": "fcs_file_id_54",
+			"value": "92970",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "sel_cloned_allfcs_exp_id",
-			"value": "2304",
+			"key": "fcs_file_id_55",
+			"value": "92971",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_comp_file_id_1",
-			"value": "7199",
+			"key": "fcs_file_id_56",
+			"value": "92972",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_comp_file_id_2",
-			"value": "7200",
+			"key": "fcs_file_id_57",
+			"value": "92973",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_comp_file_id_3",
-			"value": "7201",
+			"key": "fcs_file_id_58",
+			"value": "92974",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "gate_id",
-			"value": "5619",
+			"key": "fcs_file_id_59",
+			"value": "92975",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "gate_version",
-			"value": "-1",
+			"key": "fcs_file_id_60",
+			"value": "92976",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "gold_std_pbmc_gatesDetails",
-			"value": "{\"gates\":[{\"id\":null,\"name\":\"intact cells\",\"type\":\"PolygonGate\",\"tailored\":false,\"version\":-1,\"experimentId\":null,\"xNormalizedShortNameId\":1,\"yNormalizedShortNameId\":4,\"compensationId\":null,\"gateId\":1,\"fcsFileId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"scale\":{\"x\":{\"flag\":1,\"argument\":\"1\",\"min\":1,\"max\":262144,\"bins\":256,\"size\":256},\"y\":{\"flag\":1,\"argument\":\"1\",\"min\":1,\"max\":262144,\"bins\":256,\"size\":256}},\"positive\":false,\"negative\":false,\"label\":[123905,146432],\"polygon\":{\"vertices\":[[71680.7265625,10240.9609375],[62464.76171875,53248.796875],[67584.7421875,88064.6640625],[120832.5390625,114688.5625],[177152.32421875,110592.578125],[189440.27734375,99328.62109375],[189440.27734375,74752.71484375],[186368.2890625,61440.765625],[200704.234375,26624.8984375],[172032.34375,8192.96875],[120832.5390625,6144.9765625]]}},\"xShortName\":\"fsc-a\",\"yShortName\":\"ssc-a\",\"tailoredPerPopulationGateSetId\":null,\"tailoredPerPopulation\":false},{\"id\":null,\"name\":\"CD33+ monocytes\",\"type\":\"RectangleGate\",\"tailored\":false,\"version\":-1,\"experimentId\":null,\"xNormalizedShortNameId\":64,\"yNormalizedShortNameId\":4,\"compensationId\":null,\"gateId\":2,\"fcsFileId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"scale\":{\"x\":{\"flag\":4,\"argument\":\"150\",\"min\":-500,\"max\":262144,\"bins\":256,\"size\":256},\"y\":{\"flag\":1,\"argument\":\"1\",\"min\":1,\"max\":262144,\"bins\":256,\"size\":256}},\"positive\":false,\"negative\":false,\"label\":[4.45862441016831,137216.4765625],\"rectangle\":{\"x1\":3.6712761530983298,\"y1\":32768.875,\"x2\":5.3640749057987875,\"y2\":117760.55078125}},\"xShortName\":\"pe-a\",\"yShortName\":\"ssc-a\",\"tailoredPerPopulationGateSetId\":null,\"tailoredPerPopulation\":false},{\"id\":null,\"name\":\"CD33- lymphocytes\",\"type\":\"RectangleGate\",\"tailored\":false,\"version\":-1,\"experimentId\":null,\"xNormalizedShortNameId\":64,\"yNormalizedShortNameId\":4,\"compensationId\":null,\"gateId\":3,\"fcsFileId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"scale\":{\"x\":{\"flag\":4,\"argument\":\"150\",\"min\":-500,\"max\":262144,\"bins\":256,\"size\":256},\"y\":{\"flag\":1,\"argument\":\"1\",\"min\":1,\"max\":262144,\"bins\":256,\"size\":256}},\"positive\":false,\"negative\":false,\"label\":[0.04947417057642071,87040.66796875],\"rectangle\":{\"x1\":-1.6826919949775352,\"y1\":4096.984375,\"x2\":1.9391099875443736,\"y2\":69632.734375}},\"xShortName\":\"pe-a\",\"yShortName\":\"ssc-a\",\"tailoredPerPopulationGateSetId\":null,\"tailoredPerPopulation\":false},{\"id\":null,\"name\":\"CD3+ T cells\",\"type\":\"EllipseGate\",\"tailored\":false,\"version\":-1,\"experimentId\":null,\"xNormalizedShortNameId\":67,\"yNormalizedShortNameId\":66,\"compensationId\":null,\"gateId\":4,\"fcsFileId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"scale\":{\"x\":{\"flag\":4,\"argument\":\"150\",\"min\":-400,\"max\":262144,\"bins\":256,\"size\":256},\"y\":{\"flag\":4,\"argument\":\"150\",\"min\":-300,\"max\":262144,\"bins\":256,\"size\":256}},\"positive\":false,\"negative\":false,\"label\":[5.152939862747424,0.1693342819452885],\"ellipse\":{\"center\":[2.8982738460100355,0.13182335736099746],\"major\":2.914191482658429,\"minor\":2.844027016395471,\"angle\":0.06805548586926216}},\"xShortName\":\"pe-cy7-a\",\"yShortName\":\"percp-cy55-a\",\"tailoredPerPopulationGateSetId\":null,\"tailoredPerPopulation\":false},{\"id\":null,\"name\":\"CD20+ B cells\",\"type\":\"EllipseGate\",\"tailored\":false,\"version\":-1,\"experimentId\":null,\"xNormalizedShortNameId\":67,\"yNormalizedShortNameId\":66,\"compensationId\":null,\"gateId\":5,\"fcsFileId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"scale\":{\"x\":{\"flag\":4,\"argument\":\"150\",\"min\":-400,\"max\":262144,\"bins\":256,\"size\":256},\"y\":{\"flag\":4,\"argument\":\"150\",\"min\":-300,\"max\":262144,\"bins\":256,\"size\":256}},\"positive\":false,\"negative\":false,\"label\":[-0.011594261061196216,6.208593140014588],\"ellipse\":{\"center\":[0.20038288581154654,3.78913850432844],\"major\":3.2417397341404266,\"minor\":3.032293806882906,\"angle\":-0.779557949929365}},\"xShortName\":\"pe-cy7-a\",\"yShortName\":\"percp-cy55-a\",\"tailoredPerPopulationGateSetId\":null,\"tailoredPerPopulation\":false},{\"id\":null,\"name\":\"CD3+CD4- T cells\",\"type\":\"RectangleGate\",\"tailored\":false,\"version\":-1,\"experimentId\":null,\"xNormalizedShortNameId\":71,\"yNormalizedShortNameId\":4,\"compensationId\":null,\"gateId\":6,\"fcsFileId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"scale\":{\"x\":{\"flag\":4,\"argument\":\"150\",\"min\":-300,\"max\":262144,\"bins\":256,\"size\":256},\"y\":{\"flag\":1,\"argument\":\"1\",\"min\":1,\"max\":262144,\"bins\":256,\"size\":256}},\"positive\":false,\"negative\":false,\"label\":[0.319377980282414,83968.6796875],\"rectangle\":{\"x1\":-0.9559934555831522,\"y1\":7168.97265625,\"x2\":1.7072821899008244,\"y2\":61440.765625}},\"xShortName\":\"pacblu-a\",\"yShortName\":\"ssc-a\",\"tailoredPerPopulationGateSetId\":null,\"tailoredPerPopulation\":false},{\"id\":null,\"name\":\"CD3+CD4+ T cells\",\"type\":\"RectangleGate\",\"tailored\":false,\"version\":-1,\"experimentId\":null,\"xNormalizedShortNameId\":71,\"yNormalizedShortNameId\":4,\"compensationId\":null,\"gateId\":7,\"fcsFileId\":null,\"createdAt\":null,\"updatedAt\":null,\"definition\":{\"scale\":{\"x\":{\"flag\":4,\"argument\":\"150\",\"min\":-300,\"max\":262144,\"bins\":256,\"size\":256},\"y\":{\"flag\":1,\"argument\":\"1\",\"min\":1,\"max\":262144,\"bins\":256,\"size\":256}},\"positive\":false,\"negative\":false,\"label\":[3.432784720777767,87040.66796875],\"rectangle\":{\"x1\":2.4575006815864517,\"y1\":7168.97265625,\"x2\":4.445579684553364,\"y2\":65536.75}},\"xShortName\":\"pacblu-a\",\"yShortName\":\"ssc-a\",\"tailoredPerPopulationGateSetId\":null,\"tailoredPerPopulation\":false}]}",
+			"key": "fcs_file_id_61",
+			"value": "92977",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "population_id",
-			"value": "3044",
+			"key": "fcs_file_id_62",
+			"value": "92978",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "illustration_id",
-			"value": "471",
+			"key": "fcs_file_id_63",
+			"value": "92979",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "exp_attachment_id",
-			"value": "22162",
+			"key": "fcs_file_id_64",
+			"value": "92980",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "exp_attachment_version",
-			"value": "0",
+			"key": "fcs_file_id_65",
+			"value": "92981",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "scale_id",
-			"value": "2622",
+			"key": "fcs_file_id_66",
+			"value": "92982",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "exp_stats_id",
-			"value": "197",
+			"key": "fcs_file_id_67",
+			"value": "92983",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "exp_stats_version",
-			"value": "6",
+			"key": "fcs_file_id_68",
+			"value": "92984",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id",
-			"value": "1552",
+			"key": "fcs_file_id_69",
+			"value": "92985",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_2_id",
-			"value": "1553",
+			"key": "fcs_file_id_70",
+			"value": "92986",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_3_id",
-			"value": "1554",
+			"key": "fcs_file_id_71",
+			"value": "92987",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "panel_1_channel_id_1",
-			"value": "277",
+			"key": "fcs_file_id_72",
+			"value": "92988",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "panel_1_channel_id_2",
-			"value": "278",
+			"key": "fcs_file_id_73",
+			"value": "92989",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "experiment_version",
-			"value": "22",
+			"key": "fcs_file_id_74",
+			"value": "92990",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "gold_std_true_stat_fcsFilesDetails",
-			"value": "{\"fcsFiles\":[{\"id\":null,\"filename\":\"evenDistributionFCS.fcs\",\"cytometer\":null,\"mode\":\"L\",\"md5sum\":\"19e3bf6dde2d15d28c74bbd753b75ff2\",\"clustered\":false,\"guid\":null,\"threshold\":null,\"severity\":0,\"experimentId\":null,\"sampleName\":\"evenDistributionCSV.fcs\",\"fcsFileVersion\":\"FCS3.0\",\"dataType\":\"F\",\"tubeName\":null,\"applyCompensation\":false,\"fileSize\":85964,\"detectedCytometer\":null,\"wellId\":null,\"plateId\":\"1\",\"plateName\":\"Plate 1\",\"category\":1,\"channelCount\":21,\"uploadedById\":1,\"controlType\":0,\"createdAt\":null,\"updatedAt\":null,\"dataStart\":1536,\"dataEnd\":85955,\"acquisitionStart\":null,\"acquisitionEnd\":null,\"expFile\":\"evenDistributionCSV.fcs\",\"operatorName\":null,\"operatingSystem\":null,\"creatorSoftware\":null,\"experimentDate\":null,\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":1005,\"timeStep\":null,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"instrument\":null},{\"id\":null,\"filename\":\"negAndPosEvenDistributionFCS.fcs\",\"cytometer\":null,\"mode\":\"L\",\"md5sum\":\"6cd5ff365a8eb33eecb8d2a29c888840\",\"clustered\":false,\"guid\":null,\"threshold\":null,\"severity\":0,\"experimentId\":null,\"sampleName\":\"negAndPosEvenDistributionCSV.fcs\",\"fcsFileVersion\":\"FCS3.0\",\"dataType\":\"F\",\"tubeName\":null,\"applyCompensation\":false,\"fileSize\":153500,\"detectedCytometer\":null,\"wellId\":null,\"plateId\":\"1\",\"plateName\":\"Plate 1\",\"category\":1,\"channelCount\":21,\"uploadedById\":1,\"controlType\":0,\"createdAt\":null,\"updatedAt\":null,\"dataStart\":1536,\"dataEnd\":153491,\"acquisitionStart\":null,\"acquisitionEnd\":null,\"expFile\":\"negAndPosEvenDistributionCSV.fcs\",\"operatorName\":null,\"operatingSystem\":null,\"creatorSoftware\":null,\"experimentDate\":null,\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":1809,\"timeStep\":null,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"instrument\":null},{\"id\":null,\"filename\":\"negativeEvenDistributionFCS.fcs\",\"cytometer\":null,\"mode\":\"L\",\"md5sum\":\"caa252e91a9161b153e23ed74b95cb4c\",\"clustered\":false,\"guid\":null,\"threshold\":null,\"severity\":0,\"experimentId\":null,\"sampleName\":\"negativeEvenDistributionCSV.fcs\",\"fcsFileVersion\":\"FCS3.0\",\"dataType\":\"F\",\"tubeName\":null,\"applyCompensation\":false,\"fileSize\":85964,\"detectedCytometer\":null,\"wellId\":null,\"plateId\":\"1\",\"plateName\":\"Plate 1\",\"category\":1,\"channelCount\":21,\"uploadedById\":1,\"controlType\":0,\"createdAt\":null,\"updatedAt\":null,\"dataStart\":1536,\"dataEnd\":85955,\"acquisitionStart\":null,\"acquisitionEnd\":null,\"expFile\":\"negativeEvenDistributionCSV.fcs\",\"operatorName\":null,\"operatingSystem\":null,\"creatorSoftware\":null,\"experimentDate\":null,\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":1005,\"timeStep\":null,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"instrument\":null}]}",
+			"key": "fcs_file_id_75",
+			"value": "92991",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "other_userid",
-			"value": "18",
+			"key": "fcs_file_id_76",
+			"value": "92992",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "gold_std_expDetails_FCSOnly_response",
-			"value": "{\"experiment\":{\"id\":null,\"version\":null,\"purpose\":\"Stimulate PBMC with IL6, IL10, and LPS. Measure phosphorylation of Stat3 and p38 after 15 minutes of stimulation. Stain for CD4+ T cells, CD4- T cells, monocytes, and B cells.\",\"comments\":null,\"public\":false,\"deleted\":false,\"sources\":\"\",\"experimentName\":\"PBMC (Proper scales) -- API-2.0 TESTING -- FCS FILES ONLY / VIEW ONLY -- DO NOT DELETE\",\"gateVersion\":null,\"createdAt\":null,\"updatedAt\":null,\"primaryResearcherId\":null,\"principalInvestigatorId\":null,\"uploaderId\":null,\"projectId\":null,\"clonedFrom\":null,\"createdFrom\":null,\"childType\":null,\"createdFromUrl\":null,\"publishedReportId\":null}}",
+			"key": "fcs_file_id_77",
+			"value": "92993",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "gold_std_FullClone_Illustration_response",
-			"value": "{\"experiment\":{\"id\":null,\"version\":null,\"purpose\":\"Stimulate PBMC with IL6, IL10, and LPS. Measure phosphorylation of Stat3 and p38 after 15 minutes of stimulation. Stain for CD4+ T cells, CD4- T cells, monocytes, and B cells.\",\"comments\":null,\"public\":false,\"deleted\":false,\"sources\":\"\",\"experimentName\":\"PBMC (Proper scales) -- API-2.0 TESTING -- FULL CLONE / ILLUSTRATIONS -- DO NOT DELETE\",\"gateVersion\":null,\"createdAt\":null,\"updatedAt\":null,\"primaryResearcherId\":null,\"principalInvestigatorId\":null,\"uploaderId\":null,\"projectId\":null,\"clonedFrom\":null,\"createdFrom\":null,\"childType\":null,\"createdFromUrl\":null,\"publishedReportId\":null}}",
+			"key": "fcs_file_id_78",
+			"value": "92994",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "gold_std_expDetails_response",
-			"value": "{\"experiment\":{\"id\":null,\"version\":null,\"purpose\":\"Stimulate PBMC with IL6, IL10, and LPS. Measure phosphorylation of Stat3 and p38 after 15 minutes of stimulation. Stain for CD4+ T cells, CD4- T cells, monocytes, and B cells.\",\"comments\":null,\"public\":false,\"deleted\":false,\"sources\":\"\",\"experimentName\":\"PBMC (Proper scales) -- API-2.0 TESTING -- CLONING DISABLED -- DO NOT DELETE\",\"gateVersion\":null,\"createdAt\":null,\"updatedAt\":null,\"primaryResearcherId\":null,\"principalInvestigatorId\":null,\"uploaderId\":null,\"projectId\":null,\"clonedFrom\":null,\"createdFrom\":null,\"childType\":null,\"createdFromUrl\":null,\"publishedReportId\":null}}",
+			"key": "fcs_file_id_79",
+			"value": "92995",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "gold_std_pbmc_fcsFile_cy55_upload",
-			"value": "{\"fcsFiles\":[{\"id\":null,\"filename\":\"comp_percp_cy55.fcs\",\"cytometer\":\"LSRII\",\"mode\":\"L\",\"md5sum\":\"f5cf9b7b6551874527d28d568547b031\",\"clustered\":false,\"guid\":\"81f67e7f-5107-4f1d-b99a-21f447fc2a75\",\"threshold\":\"FSC,18000\",\"severity\":0,\"experimentId\":null,\"sampleName\":\"Comp_PerCP_Cy55.fcs\",\"fcsFileVersion\":\"FCS3.0\",\"dataType\":\"F\",\"tubeName\":\"PerCP_Cy55\",\"applyCompensation\":true,\"fileSize\":443450,\"detectedCytometer\":\"LSRII\",\"wellId\":null,\"plateId\":\"Comp\",\"plateName\":null,\"category\":1,\"channelCount\":18,\"createdAt\":null,\"updatedAt\":null,\"dataStart\":3234,\"dataEnd\":443441,\"acquisitionStart\":\"16:05:10\",\"acquisitionEnd\":\"16:06:06\",\"expFile\":\"Comp_PerCP_Cy55.fcs\",\"operatorName\":\"Angelica\",\"operatingSystem\":\"Windows XP 5.1\",\"creatorSoftware\":\"BD FACSDiva Software Version 6.0\",\"experimentDate\":\"02-SEP-2009\",\"experimentName\":null,\"exportTime\":\"02-SEP-2009-17:13:08\",\"exportUser\":\"Angelica\",\"windowExtension\":\"10.00\",\"totalEvents\":6114,\"timeStep\":null,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"instrument\":\" \"}]}",
+			"key": "fcs_file_id_80",
+			"value": "92996",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "visne_exp_id",
-			"value": "147",
+			"key": "fcs_file_id_81",
+			"value": "92997",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "drop_exp_id",
-			"value": "199",
+			"key": "fcs_file_id_82",
+			"value": "92998",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "api_user",
-			"value": "153",
+			"key": "fcs_file_id_83",
+			"value": "92999",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "exp_id_no_panels_annotations",
-			"value": "180",
+			"key": "fcs_file_id_84",
+			"value": "93000",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "pi_id",
-			"value": "29",
+			"key": "fcs_file_id_85",
+			"value": "93001",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "project_id",
-			"value": "17",
+			"key": "fcs_file_id_86",
+			"value": "93002",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "pi_username",
-			"value": "roopali",
+			"key": "fcs_file_id_87",
+			"value": "93003",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "pi_password",
-			"value": "!Password1",
+			"key": "fcs_file_id_88",
+			"value": "93004",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "pi_token",
-			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkODZjZDFjNWFjZDlmMjdmYWQwOWUyOWJiNGY4NDBkNSIsImV4cCI6MTU2NjQ5MzY2NiwidXNlcl9pZCI6MjksImF1ZCI6ImN5dG9iYW5rX2FwaV92MV91c2VycyIsImlhdCI6MTU2NjQ2NDg2NiwiaXNzIjoiaHR0cHM6Ly9xYS1hcmllbC5jeXRvYmFuay5vcmcvIiwibmJmIjoxNTY2NDY0ODY2LCJzdWIiOiJjeXRvYmFua19hcGlfdjEifQ.VOa0cQQrkla8WoNbJ_G9UUCEnVRvdEs4oPrwDKVzXtA",
+			"key": "fcs_file_id_89",
+			"value": "93005",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "exp_id_project",
-			"value": "15272",
+			"key": "fcs_file_id_90",
+			"value": "93006",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "exp_id_project_pi_access",
-			"value": "2549",
+			"key": "fcs_file_id_91",
+			"value": "93007",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "member_user",
-			"value": "roopali",
+			"key": "fcs_file_id_92",
+			"value": "93008",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "member_password",
-			"value": "!Password1",
+			"key": "fcs_file_id_93",
+			"value": "93009",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "member_token",
-			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxYWQwOGEwYzg3MGU0OTQ5ZGVmMjJhZmE0ZGUwNTRjZiIsImV4cCI6MTU2NjQ5MzI0NSwidXNlcl9pZCI6NzQsImF1ZCI6ImN5dG9iYW5rX2FwaV92MV91c2VycyIsImlhdCI6MTU2NjQ2NDQ0NSwiaXNzIjoiaHR0cHM6Ly9xYS1hcmllbC5jeXRvYmFuay5vcmcvIiwibmJmIjoxNTY2NDY0NDQ1LCJzdWIiOiJjeXRvYmFua19hcGlfdjEifQ.t0FwWseYSul2jecem9zZtrwlYqMmcy82bft6YU2v6sY",
+			"key": "fcs_file_id_94",
+			"value": "93010",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "member_id",
-			"value": "74",
+			"key": "fcs_file_id_95",
+			"value": "93011",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "exp_id_user_project",
-			"value": "2553",
+			"key": "all_fcs_file_ids",
+			"value": "92916, 92917, 92918, 92919, 92920, 92921, 92922, 92923, 92924, 92925, 92926, 92927, 92928, 92929, 92930, 92931, 92932, 92933, 92934, 92935, 92936, 92937, 92938, 92939, 92940, 92941, 92942, 92943, 92944, 92945, 92946, 92947, 92948, 92949, 92950, 92951, 92952, 92953, 92954, 92955, 92956, 92957, 92958, 92959, 92960, 92961, 92962, 92963, 92964, 92965, 92966, 92967, 92968, 92969, 92970, 92971, 92972, 92973, 92974, 92975, 92976, 92977, 92978, 92979, 92980, 92981, 92982, 92983, 92984, 92985, 92986, 92987, 92988, 92989, 92990, 92991, 92992, 92993, 92994, 92995, 92996, 92997, 92998, 92999, 93000, 93001, 93002, 93003, 93004, 93005, 93006, 93007, 93008, 93009, 93010, 93011",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "Clone_Illustrations_Exp",
-			"value": "PBMC (Proper scales) Clone Illustrations API",
+			"key": "gold_std_pbmc_fcsFilesDetails_ds",
+			"value": "{\"fcsFiles\":[{\"id\":null,\"filename\":\"01-Well-B8.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"1625f443ebea641a4c7b88fff85bd8a0\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3495088,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B8.fcs\",\"tubeName\":null,\"uniqueHash\":\"11fcee2700cd602ab43b6b9d0455963b5fff3d2f42867b54a90b1e0bb6a22c7b096602d7fd232c63c0fa8da16efbba1789dd29bd1977373ce52e2651d6719d72\",\"updatedAt\":null,\"wellId\":\"B8\",\"numberOfParameters\":26,\"numberOfEvents\":33479,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3495079,\"acquisitionStart\":\"16:11:23\",\"acquisitionEnd\":\"16:12:02\",\"expFile\":\"01-Well-B8.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33479,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A5.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"fa709ec8f1f7682936557c49cde78c6e\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3154280,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A5.fcs\",\"tubeName\":null,\"uniqueHash\":\"281cfa01bd4ef1f51b9f0dc864494b3bd822a62872e39e9d19cdaa1c6366897b2fcbef9c24895d2edb3e8a306893a752b234396f53423dabc71159618e73e6ad\",\"updatedAt\":null,\"wellId\":\"A5\",\"numberOfParameters\":26,\"numberOfEvents\":30202,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3154271,\"acquisitionStart\":\"15:36:00\",\"acquisitionEnd\":\"15:38:00\",\"expFile\":\"01-Well-A5.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":30202,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A11.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"6c76f75354b5074fe0902f18f7c96be5\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3348240,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A11.fcs\",\"tubeName\":null,\"uniqueHash\":\"7b3dcd231e57076e1de1029c63fd4fedefa739aef1c6b891bf2f87073ab4171d88e83fb5df970782f8b543414cfbf2f387c8b99e715bbdc5b4988536549c8fb7\",\"updatedAt\":null,\"wellId\":\"A11\",\"numberOfParameters\":26,\"numberOfEvents\":32067,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3348231,\"acquisitionStart\":\"15:50:09\",\"acquisitionEnd\":\"15:52:07\",\"expFile\":\"01-Well-A11.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32067,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C7.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"cb7f68d6290fa912e4717353eeb04bb6\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3655144,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C7.fcs\",\"tubeName\":null,\"uniqueHash\":\"a6a392f715744ae88e23bcfbed5e199a62d7d73c97ddee3040fce3968414d5500e2fedfbe556561424e7482771d977d1e1406c16f1ac8827df07eea3e4dd0933\",\"updatedAt\":null,\"wellId\":\"C7\",\"numberOfParameters\":26,\"numberOfEvents\":35018,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3655135,\"acquisitionStart\":\"16:23:22\",\"acquisitionEnd\":\"16:24:08\",\"expFile\":\"01-Well-C7.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35018,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A8.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"dd95ef99bec87086c6775cc762321ed1\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":2783832,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A8.fcs\",\"tubeName\":null,\"uniqueHash\":\"b56577a3ba4b46fb9e71a03e75f0642e97249df2c7bd92ac7624e3ee8bd65f6f784d80b3f8b824b85bb7adac31e7f394f0d10ff1b015b20654432ceddc745f79\",\"updatedAt\":null,\"wellId\":\"A8\",\"numberOfParameters\":26,\"numberOfEvents\":26640,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":2783823,\"acquisitionStart\":\"15:43:14\",\"acquisitionEnd\":\"15:45:14\",\"expFile\":\"01-Well-A8.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":26640,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B1.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"5d65570529082c0954de9f1a162402f4\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3240912,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B1.fcs\",\"tubeName\":null,\"uniqueHash\":\"ef7e1a05d2f503dfb1193631e9220c46b1e3babe57b6574bf5a8103bda117b516d7e886d81f62f7c4045d0addc5956c4df41929962048af92bea6f4ed8dfcb81\",\"updatedAt\":null,\"wellId\":\"B1\",\"numberOfParameters\":26,\"numberOfEvents\":31035,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3240903,\"acquisitionStart\":\"15:54:58\",\"acquisitionEnd\":\"15:56:54\",\"expFile\":\"01-Well-B1.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31035,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B9.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"2e199555aaf91b2085947177efd3d62c\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3566120,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B9.fcs\",\"tubeName\":null,\"uniqueHash\":\"a390f182ece7e5b0cf8f4464e942f1b6f5383a0a5f1b457e6ab3d8bb9df35f6008b263dca3d74f261c084a3e15b77107d6283b42043995c5427fd04941db2da8\",\"updatedAt\":null,\"wellId\":\"B9\",\"numberOfParameters\":26,\"numberOfEvents\":34162,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3566111,\"acquisitionStart\":\"16:12:27\",\"acquisitionEnd\":\"16:13:07\",\"expFile\":\"01-Well-B9.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34162,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A1.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"9612da46a8f4bcd30acbad3a626cf7fd\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3501016,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A1.fcs\",\"tubeName\":null,\"uniqueHash\":\"15c6c01db80dd796796a20d22b4372477a56eafaae1f501b94889044060bb46c82dddb9b11d039bbe894187a20de417d4292cb619ee4f028a6a237636dc7191d\",\"updatedAt\":null,\"wellId\":\"A1\",\"numberOfParameters\":26,\"numberOfEvents\":33536,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3501007,\"acquisitionStart\":\"15:26:02\",\"acquisitionEnd\":\"15:28:02\",\"expFile\":\"01-Well-A1.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33536,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A12.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"cc4df4f4b8d72d98e9b1bbe3ea1d289d\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3263480,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A12.fcs\",\"tubeName\":null,\"uniqueHash\":\"5bf841fd597d8659d25dd4e790342cac798cd3f8a747511588d5921c9504c72e294667b28b47b7de258e2370aec0dfe261e1f6754b2fe7f72b73573ce7b94320\",\"updatedAt\":null,\"wellId\":\"A12\",\"numberOfParameters\":26,\"numberOfEvents\":31252,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3263471,\"acquisitionStart\":\"15:52:32\",\"acquisitionEnd\":\"15:54:32\",\"expFile\":\"01-Well-A12.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31252,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A2.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"8eadecc34d268df58b4867064b2c2170\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3222608,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A2.fcs\",\"tubeName\":null,\"uniqueHash\":\"33331e759587f582a63c97a30876ebdb5f746a01843ca8e672a6d6b7a15e96b169129786827e97c98c3ccd7eb38742d1006063456e9ef924a8a9b60e6dbea301\",\"updatedAt\":null,\"wellId\":\"A2\",\"numberOfParameters\":26,\"numberOfEvents\":30859,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3222599,\"acquisitionStart\":\"15:29:05\",\"acquisitionEnd\":\"15:30:54\",\"expFile\":\"01-Well-A2.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":30859,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C9.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"f4e3692dd9e157caae72c7c3dda00ace\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3564768,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C9.fcs\",\"tubeName\":null,\"uniqueHash\":\"51d77d56e8deeba20bf3e3f4ae4abf181f94d73a39e3711c98d71c7fbd73a425ba472e51554028c4066bb161d5e75638fdde018671f80791d2fe3323a0d133b4\",\"updatedAt\":null,\"wellId\":\"C9\",\"numberOfParameters\":26,\"numberOfEvents\":34149,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3564759,\"acquisitionStart\":\"16:25:41\",\"acquisitionEnd\":\"16:26:28\",\"expFile\":\"01-Well-C9.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34149,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A7.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"bdf0fd5e26313f5f1d021edeb126f6ab\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3293744,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A7.fcs\",\"tubeName\":null,\"uniqueHash\":\"e316895024884a328829349d0e42ef7e2027eb1fd8dbdec4bab07cdbd3d763f494ac0ef03782cebcfd364f6a0a552ec7f9e904da3120686f5475cbbed68a9a37\",\"updatedAt\":null,\"wellId\":\"A7\",\"numberOfParameters\":26,\"numberOfEvents\":31543,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3293735,\"acquisitionStart\":\"15:40:51\",\"acquisitionEnd\":\"15:42:50\",\"expFile\":\"01-Well-A7.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31543,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B5.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"d412915f4761ef8ddaafeb4d621601ee\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3288752,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B5.fcs\",\"tubeName\":null,\"uniqueHash\":\"895a2463f9c59e6739d96deb0ac23f18c4bb3136ea784c0e138d65041f30d1c6ac7f9e3ec474a8e691ba3b12453487cf689f69a0d05d169bacb388ea255f7736\",\"updatedAt\":null,\"wellId\":\"B5\",\"numberOfParameters\":26,\"numberOfEvents\":31495,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3288743,\"acquisitionStart\":\"16:04:23\",\"acquisitionEnd\":\"16:06:23\",\"expFile\":\"01-Well-B5.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31495,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D5.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"8db36a7f1534e7ee4ee1673a425b1bfd\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3582344,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D5.fcs\",\"tubeName\":null,\"uniqueHash\":\"ba0d596e87ad58f5db007347917f91d7816310383ba42f9378dea337f87e758817b0b5474d70e68b7839efdc81ab6ec640e400b0dcde602054c62496c317a02b\",\"updatedAt\":null,\"wellId\":\"D5\",\"numberOfParameters\":26,\"numberOfEvents\":34318,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3582335,\"acquisitionStart\":\"16:34:46\",\"acquisitionEnd\":\"16:35:33\",\"expFile\":\"01-Well-D5.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34318,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C3.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"19ade722aa54c4c0e8c98a9a2d80b1cd\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3526392,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C3.fcs\",\"tubeName\":null,\"uniqueHash\":\"6f2e5b49f9a96ba8c0bca6aea6e3eb35e34f17a7b7f8b662a8c41dd2f169af0df61a3d1a585be26711f63e2be19e1374211fe554e433e2334e841742dbfa7af0\",\"updatedAt\":null,\"wellId\":\"C3\",\"numberOfParameters\":26,\"numberOfEvents\":33780,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3526383,\"acquisitionStart\":\"16:18:47\",\"acquisitionEnd\":\"16:19:29\",\"expFile\":\"01-Well-C3.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33780,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C11.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"25d168749e35e5fc7dc81ba4b9b28edc\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3497272,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C11.fcs\",\"tubeName\":null,\"uniqueHash\":\"5245485aed51301278685f0f9b8353e77a39b1d6024da50299ee06311bc286e25648e1f005557dc6f8cc30b8da6594bc20d53274d651aa0d402d6af428ba19ef\",\"updatedAt\":null,\"wellId\":\"C11\",\"numberOfParameters\":26,\"numberOfEvents\":33500,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3497263,\"acquisitionStart\":\"16:28:02\",\"acquisitionEnd\":\"16:28:47\",\"expFile\":\"01-Well-C11.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33500,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A6.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"6877716a61ae60df9ba9de8ec1eec46b\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3216472,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A6.fcs\",\"tubeName\":null,\"uniqueHash\":\"7b439a4b571c0f8709a5df972461028459250292a6802346e44342a2fdf5a480fa38832d589284b42dc14c2d44d8c83a53d0d63398008edf1f1d55e6974f7f62\",\"updatedAt\":null,\"wellId\":\"A6\",\"numberOfParameters\":26,\"numberOfEvents\":30800,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3216463,\"acquisitionStart\":\"15:38:24\",\"acquisitionEnd\":\"15:40:24\",\"expFile\":\"01-Well-A6.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":30800,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D2.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"889e12ca2fe7faac5124ccd6a1075513\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3441320,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D2.fcs\",\"tubeName\":null,\"uniqueHash\":\"6ca8de6ea45a435698c76bb6a947a6436bb95c34dbf1495a838f5e3f27d4c299496f28167380ca6ea5151b9a1a139b4494a872f8d3d8693113a04fbb01ec106a\",\"updatedAt\":null,\"wellId\":\"D2\",\"numberOfParameters\":26,\"numberOfEvents\":32962,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3441311,\"acquisitionStart\":\"16:31:26\",\"acquisitionEnd\":\"16:32:04\",\"expFile\":\"01-Well-D2.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32962,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B10.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"3fa6fd099df28f4371b7e2d88740ab07\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3471480,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B10.fcs\",\"tubeName\":null,\"uniqueHash\":\"2f62a531b548e1d5b26c66d541b1e8246634934f5c5c36e11869083a585a3e7e586d7b5fa4473e7d44b02c29ed0bc0ec1b47c503bdbc13e6fb2f159ed30de60e\",\"updatedAt\":null,\"wellId\":\"B10\",\"numberOfParameters\":26,\"numberOfEvents\":33252,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3471471,\"acquisitionStart\":\"16:13:31\",\"acquisitionEnd\":\"16:14:10\",\"expFile\":\"01-Well-B10.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33252,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D12.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"6352915a0a8b3f64fcd04497fb83e252\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3704648,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D12.fcs\",\"tubeName\":null,\"uniqueHash\":\"91b0fc4cc8ca150ad117182afb66ffd9ab8288d3c007f345a5551ec95bd3beb6f4f00e588700d6458e0d129370311953b42ea1aeb9c3626847e3b483e82cd53c\",\"updatedAt\":null,\"wellId\":\"D12\",\"numberOfParameters\":26,\"numberOfEvents\":35494,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3704639,\"acquisitionStart\":\"16:43:23\",\"acquisitionEnd\":\"16:44:15\",\"expFile\":\"01-Well-D12.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35494,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B3.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"ea759c8bb953a45cfd187639d24fb886\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3259216,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B3.fcs\",\"tubeName\":null,\"uniqueHash\":\"e743ce47b4a1dfed15f01ad83ec2cedff39783fa7da90e6cb6a29311d8c7d8b72f1d53c7e38859fa8cfe7e7348353983f1202c4391dac6af607d4fc62eaa9e34\",\"updatedAt\":null,\"wellId\":\"B3\",\"numberOfParameters\":26,\"numberOfEvents\":31211,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3259207,\"acquisitionStart\":\"15:59:35\",\"acquisitionEnd\":\"16:01:35\",\"expFile\":\"01-Well-B3.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31211,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D1.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"53be0f13cefe9723ce8a4c32d3bedcc7\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3323176,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D1.fcs\",\"tubeName\":null,\"uniqueHash\":\"5408748d7844792c594b764010059fcc23e8f3909bc10fae719556568fd5da53676ca2ea048019b35250c54e93bbf344eec496b1289e140e7dd25c8d96293c5c\",\"updatedAt\":null,\"wellId\":\"D1\",\"numberOfParameters\":26,\"numberOfEvents\":31826,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3323167,\"acquisitionStart\":\"16:30:27\",\"acquisitionEnd\":\"16:31:02\",\"expFile\":\"01-Well-D1.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31826,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C4.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"377908d0fe622c82df0cabc52c60a3a8\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3672096,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C4.fcs\",\"tubeName\":null,\"uniqueHash\":\"d3346aa88aede6e5b47ce4925187b199bb88e31faea77bd92d8fd105915aeb2d3d9b96805eed78ae7cfea5d7d9f64a9bed53b3148d4c1f7f0137d298f46e9943\",\"updatedAt\":null,\"wellId\":\"C4\",\"numberOfParameters\":26,\"numberOfEvents\":35181,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3672087,\"acquisitionStart\":\"16:19:53\",\"acquisitionEnd\":\"16:20:40\",\"expFile\":\"01-Well-C4.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35181,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C8.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"e1dbdcfb9f4d9bea70cb9d6b43e887cf\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3531592,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C8.fcs\",\"tubeName\":null,\"uniqueHash\":\"c6b9a60ba4571702b734e04a2c28591c2a0349924ab852491f4ee5d536763b360b507411c46156b12add15fdf74644411abb8ab234443cf6cf555b36b0eacde2\",\"updatedAt\":null,\"wellId\":\"C8\",\"numberOfParameters\":26,\"numberOfEvents\":33830,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3531583,\"acquisitionStart\":\"16:24:32\",\"acquisitionEnd\":\"16:25:17\",\"expFile\":\"01-Well-C8.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33830,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C10.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"821b7e82ab4e10dbed9067263dc8d477\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3605328,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C10.fcs\",\"tubeName\":null,\"uniqueHash\":\"0d05f99ca924bbf5642c16000348de9c5bc4c8057b154b6342470fd8a845c69b176e49f07fec6a96abd39f01a413dd0c5caf44cc09b4c2f52d13bae7ae839c50\",\"updatedAt\":null,\"wellId\":\"C10\",\"numberOfParameters\":26,\"numberOfEvents\":34539,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3605319,\"acquisitionStart\":\"16:26:52\",\"acquisitionEnd\":\"16:27:38\",\"expFile\":\"01-Well-C10.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34539,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D3.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"89db838e13d02784df409c5d75723ff2\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3516616,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D3.fcs\",\"tubeName\":null,\"uniqueHash\":\"e83816b4bee735d4bc47ae366a402fb55e7360df81e18a58802822623c065dc58c8c4a341580ad9bfbfba70c48a277af340526504ff0a0f94afa92d0f722638a\",\"updatedAt\":null,\"wellId\":\"D3\",\"numberOfParameters\":26,\"numberOfEvents\":33686,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3516607,\"acquisitionStart\":\"16:32:28\",\"acquisitionEnd\":\"16:33:10\",\"expFile\":\"01-Well-D3.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33686,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D8.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"bf9dab1c3b21c9c004c2dc480a546419\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3536584,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D8.fcs\",\"tubeName\":null,\"uniqueHash\":\"c035835585b6718c4c7c6a1bfbf24a0402bf437462d8ecad9f73efdc3e5b448b3408bd113bd71ba8c748c102a986b2a67943eecddcdf1a116370e44fc3d137df\",\"updatedAt\":null,\"wellId\":\"D8\",\"numberOfParameters\":26,\"numberOfEvents\":33878,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3536575,\"acquisitionStart\":\"16:38:23\",\"acquisitionEnd\":\"16:39:10\",\"expFile\":\"01-Well-D8.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33878,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A4.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"9b88a616ed61f3d498c01ba113e85077\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3076592,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A4.fcs\",\"tubeName\":null,\"uniqueHash\":\"85d0fbaf0e54ede622b5e3548c7ddeaa7f0790da5733650c19830b1232567de783a52a909edf0a5c622d5316787a5618e0db90afbb0ded810078935a3002912d\",\"updatedAt\":null,\"wellId\":\"A4\",\"numberOfParameters\":26,\"numberOfEvents\":29455,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3076583,\"acquisitionStart\":\"15:33:36\",\"acquisitionEnd\":\"15:35:36\",\"expFile\":\"01-Well-A4.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":29455,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C2.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"f9a1f2a19f535da708fe522e7d651973\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3204408,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C2.fcs\",\"tubeName\":null,\"uniqueHash\":\"88e1c147e4de049fec36171957512c84c494fb63043ed87e219370a912eba217568c5cdfb568c3c6accfae1f5955cf0cbdc93c25eec09e5cbe6429d1d9828665\",\"updatedAt\":null,\"wellId\":\"C2\",\"numberOfParameters\":26,\"numberOfEvents\":30684,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3204399,\"acquisitionStart\":\"16:17:47\",\"acquisitionEnd\":\"16:18:23\",\"expFile\":\"01-Well-C2.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":30684,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B11.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"5ea5abf121a776926cd353f82ae16d9d\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3514120,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B11.fcs\",\"tubeName\":null,\"uniqueHash\":\"579b76cfb2c534f77b29e48d89319a5f8747fd16d7d42539b941d0bd36120832eb7031c6f138076d97afd7b481447a5727d83c0afd1eb5d31749a51c2a1a1981\",\"updatedAt\":null,\"wellId\":\"B11\",\"numberOfParameters\":26,\"numberOfEvents\":33662,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3514111,\"acquisitionStart\":\"16:14:34\",\"acquisitionEnd\":\"16:15:15\",\"expFile\":\"01-Well-B11.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33662,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B6.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"8d5835787badcc659cb3805d5567bd0e\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3347824,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B6.fcs\",\"tubeName\":null,\"uniqueHash\":\"f45e196edfaf0b614e7e66350cfab478a55400e7883177bbb7e4abed1850e51d84a3ed47d458386331fd7b514c887732b7cc990595742604817e96aa4ed8c69e\",\"updatedAt\":null,\"wellId\":\"B6\",\"numberOfParameters\":26,\"numberOfEvents\":32063,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3347815,\"acquisitionStart\":\"16:06:48\",\"acquisitionEnd\":\"16:08:48\",\"expFile\":\"01-Well-B6.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32063,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D9.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"1a1427eeaeb10a18bb38d845f6e4c7c8\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3599608,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D9.fcs\",\"tubeName\":null,\"uniqueHash\":\"781f0810777f06be4fd9b3d486b508be2cd2d5276d596115a0c2c9a2f6aa2d530abcc276f11bf01ef1cde315b282ed7a1b1e9746e839b1690ac83b7dfdf18032\",\"updatedAt\":null,\"wellId\":\"D9\",\"numberOfParameters\":26,\"numberOfEvents\":34484,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3599599,\"acquisitionStart\":\"16:39:34\",\"acquisitionEnd\":\"16:40:23\",\"expFile\":\"01-Well-D9.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34484,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B2.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"91926fb0d203c1ded7cad451539bb5a1\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3283344,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B2.fcs\",\"tubeName\":null,\"uniqueHash\":\"8684cf2a8593964826fa79f1dd5a3faedaa454af5d869948ae7d226ba28fee5491a3793fe56432b7abd7e647e91594a53603e1fa7851dcfaf82321f5c1b4401a\",\"updatedAt\":null,\"wellId\":\"B2\",\"numberOfParameters\":26,\"numberOfEvents\":31443,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3283335,\"acquisitionStart\":\"15:57:18\",\"acquisitionEnd\":\"15:59:10\",\"expFile\":\"01-Well-B2.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31443,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A3.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"2fa1c04102616e270481a8513cc0e6eb\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3095936,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A3.fcs\",\"tubeName\":null,\"uniqueHash\":\"15fc24136f2085637335f143cd4ce2886381946275320acb828337b6ab97af5c61958f70f6526dd258f867a85f623d00d28d569fe278b0e4be7b6e5b08c250e5\",\"updatedAt\":null,\"wellId\":\"A3\",\"numberOfParameters\":26,\"numberOfEvents\":29641,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3095927,\"acquisitionStart\":\"15:31:18\",\"acquisitionEnd\":\"15:33:12\",\"expFile\":\"01-Well-A3.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":29641,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D4.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"cd5836009ab6a532ccdaa9def66d2c9f\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3597216,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D4.fcs\",\"tubeName\":null,\"uniqueHash\":\"9d8c22431d5b67f4495dc441c938ee4102b095f86ce73acf4220b8868d0ab09f27a2e440aa242c2b87d83f97587907dad095db9a4c6e2d165f5de6a8489d9ca8\",\"updatedAt\":null,\"wellId\":\"D4\",\"numberOfParameters\":26,\"numberOfEvents\":34461,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3597207,\"acquisitionStart\":\"16:33:34\",\"acquisitionEnd\":\"16:34:21\",\"expFile\":\"01-Well-D4.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34461,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B4.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"8cdff1734321d283d467b1eb28eecc18\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3271384,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B4.fcs\",\"tubeName\":null,\"uniqueHash\":\"57b69d42b8c92e201f17f9c98344e182787a812306b839f5a0cb6df1d3dd57c5abd0ff90625ec1a271f248c4be1525266015977c443ca46672f16d8cb08b67ef\",\"updatedAt\":null,\"wellId\":\"B4\",\"numberOfParameters\":26,\"numberOfEvents\":31328,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3271375,\"acquisitionStart\":\"16:01:59\",\"acquisitionEnd\":\"16:03:59\",\"expFile\":\"01-Well-B4.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31328,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B12.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"3c36b70319e413bf0dc57fe3c66a09a8\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3567056,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B12.fcs\",\"tubeName\":null,\"uniqueHash\":\"3f2a0d1e03a48fcb5cdad335bbdb811e60db39d61b9b61a0ee8f0cfc256c2ca3050c5445270c75f276f0cb4c573d61bd11a94aab5a3928ecced65371bad08896\",\"updatedAt\":null,\"wellId\":\"B12\",\"numberOfParameters\":26,\"numberOfEvents\":34171,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3567047,\"acquisitionStart\":\"16:15:39\",\"acquisitionEnd\":\"16:16:22\",\"expFile\":\"01-Well-B12.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34171,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E1.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"9e0ad29f9af8c7202997252631c21eb4\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3222712,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E1.fcs\",\"tubeName\":null,\"uniqueHash\":\"626485e6eeb29df78ec01a7900aec07569aeff4013c9da91312e517279aa2b02e72704270f1803bb48ab468a2de6089b7e3e3efd08af24fd8760ffb056b9bf3d\",\"updatedAt\":null,\"wellId\":\"E1\",\"numberOfParameters\":26,\"numberOfEvents\":30860,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3222703,\"acquisitionStart\":\"16:44:41\",\"acquisitionEnd\":\"16:45:14\",\"expFile\":\"01-Well-E1.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":30860,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C12.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"0575d7d8262dc3f702cf0c1a8f659f73\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3689776,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C12.fcs\",\"tubeName\":null,\"uniqueHash\":\"fd59b4c65e906b18ae0178859354361fbe6522a6778f67e5aa9f94280f2c2dc427711651858ff2f46d1420c23f066a736b22da830f7b78bb34e1ce5d69907864\",\"updatedAt\":null,\"wellId\":\"C12\",\"numberOfParameters\":26,\"numberOfEvents\":35351,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3689767,\"acquisitionStart\":\"16:29:11\",\"acquisitionEnd\":\"16:30:01\",\"expFile\":\"01-Well-C12.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35351,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A9.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"459eeb5106fd589978fd081c7cd2cbdd\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3281160,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A9.fcs\",\"tubeName\":null,\"uniqueHash\":\"1d962c8eeabac2adf7c01586532b158ab800b3f835b4bbb0d2bcef10a68d9e267dc8406a55d3ace6bbdad3e77b1c14aaab6c400f94eddf29e866a7dae9dbd561\",\"updatedAt\":null,\"wellId\":\"A9\",\"numberOfParameters\":26,\"numberOfEvents\":31422,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3281151,\"acquisitionStart\":\"15:45:39\",\"acquisitionEnd\":\"15:47:33\",\"expFile\":\"01-Well-A9.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31422,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E10.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"f8592bb217a519b09545b63d8efaa61a\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3801368,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E10.fcs\",\"tubeName\":null,\"uniqueHash\":\"efc1c84633e4a0899a13a0e74bc4fd6aebb3badeb4b4318f266a4c3a46e734ea3bbfe078f2836b7cda5de1cd2f03153e8ade19b18807bce09af085431dff3715\",\"updatedAt\":null,\"wellId\":\"E10\",\"numberOfParameters\":26,\"numberOfEvents\":36424,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3801359,\"acquisitionStart\":\"16:54:21\",\"acquisitionEnd\":\"16:55:09\",\"expFile\":\"01-Well-E10.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":36424,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D6.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"5cc226076f20e13adc737c90595d4357\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3574960,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D6.fcs\",\"tubeName\":null,\"uniqueHash\":\"c2518fd94c3ff1b909668020d6ca28c830555f18282a00706c9025dafeada133a0f5ddd7d0d40cf40a474a524a25d3201a647cf3e4b38dec6476f9efd639366f\",\"updatedAt\":null,\"wellId\":\"D6\",\"numberOfParameters\":26,\"numberOfEvents\":34247,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3574951,\"acquisitionStart\":\"16:35:58\",\"acquisitionEnd\":\"16:36:44\",\"expFile\":\"01-Well-D6.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34247,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D10.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"a7857d6db42e9ec12cd9f0ef2ec2c757\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3876664,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D10.fcs\",\"tubeName\":null,\"uniqueHash\":\"ca960ebdf2b7bc5bccb535c3e4176e0adc744b37d1c7e785acecde5a350e51abb4f39aba379adceec467b620f067543b8c766609805203fc093cf110c0c00c48\",\"updatedAt\":null,\"wellId\":\"D10\",\"numberOfParameters\":26,\"numberOfEvents\":37148,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3876655,\"acquisitionStart\":\"16:40:48\",\"acquisitionEnd\":\"16:41:43\",\"expFile\":\"01-Well-D10.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":37148,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C5.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"2edbdf76f77e001491cc865192e953e2\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3564560,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C5.fcs\",\"tubeName\":null,\"uniqueHash\":\"edf945bfb926909b4df58e5f4d6f40336f09b52ff65c81ca645cb06ea538dca0655e412239885f1614c116158f361530ab41e3adf29d385d29fca4550baf5139\",\"updatedAt\":null,\"wellId\":\"C5\",\"numberOfParameters\":26,\"numberOfEvents\":34147,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3564551,\"acquisitionStart\":\"16:21:04\",\"acquisitionEnd\":\"16:21:49\",\"expFile\":\"01-Well-C5.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34147,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-B7.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"b728c74eca93cdc5200b78a128e52303\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3823416,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-B7.fcs\",\"tubeName\":null,\"uniqueHash\":\"68050d6b68c95b1f2d404d00c372e8678cb667178807a3b3972820fa85827f8eac12b1f815923701b62c63b2bb0002bcdd20808a2bf4847997ec387cacb3be50\",\"updatedAt\":null,\"wellId\":\"B7\",\"numberOfParameters\":26,\"numberOfEvents\":36636,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3823407,\"acquisitionStart\":\"16:09:12\",\"acquisitionEnd\":\"16:10:59\",\"expFile\":\"01-Well-B7.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":36636,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D11.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"8b181d2cbbdf80d7c3802d04fc2bc36b\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3698824,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D11.fcs\",\"tubeName\":null,\"uniqueHash\":\"0414779926504ef5a9bd54b5eef244d2192fa78096015e35335e14e951f52bfd9e59499851c82c15e9ea01ef9f6e7027d238a8c6fa49e583b857e5d71ede9b76\",\"updatedAt\":null,\"wellId\":\"D11\",\"numberOfParameters\":26,\"numberOfEvents\":35438,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3698815,\"acquisitionStart\":\"16:42:07\",\"acquisitionEnd\":\"16:42:59\",\"expFile\":\"01-Well-D11.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35438,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-D7.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"21ed36b80abbe3977a966f03419ade4f\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3785560,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-D7.fcs\",\"tubeName\":null,\"uniqueHash\":\"a91702c627900338f9bfcdc3a3c23feff999891c7df4948eedad73f82cbd502329de22120c049d4f816a3490fe92ba000391c404e7ccbf16b79ee0274bf54f6d\",\"updatedAt\":null,\"wellId\":\"D7\",\"numberOfParameters\":26,\"numberOfEvents\":36272,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3785551,\"acquisitionStart\":\"16:37:08\",\"acquisitionEnd\":\"16:37:59\",\"expFile\":\"01-Well-D7.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":36272,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-A10.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"cdf2a75f159735ac124ab186a97d8e9f\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3114344,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-A10.fcs\",\"tubeName\":null,\"uniqueHash\":\"27844490888af37025ca9d45363fc11e1b43625ea3ad1775e3540471ccf371c4b8613bb3ec666fd6c4674f13e654a9b06302f0c984a84bd894697f8a58ad54db\",\"updatedAt\":null,\"wellId\":\"A10\",\"numberOfParameters\":26,\"numberOfEvents\":29818,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3114335,\"acquisitionStart\":\"15:47:57\",\"acquisitionEnd\":\"15:49:45\",\"expFile\":\"01-Well-A10.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":29818,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C1.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"1da270a7e68bd4a98480da7f9528a69d\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3276584,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C1.fcs\",\"tubeName\":null,\"uniqueHash\":\"85f6ff4fec7e95f7c28d8952989637eb3834cb30a2be1c4522e1158eb92b81d933b056d90a5db2c2862aef427c7223ae520c6fdd04a8ca91e5475aa89d3bbc6f\",\"updatedAt\":null,\"wellId\":\"C1\",\"numberOfParameters\":26,\"numberOfEvents\":31378,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3276575,\"acquisitionStart\":\"16:16:48\",\"acquisitionEnd\":\"16:17:23\",\"expFile\":\"01-Well-C1.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31378,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-C6.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"a1a929fe79cda7248c412cae44e0d793\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3558216,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-C6.fcs\",\"tubeName\":null,\"uniqueHash\":\"e8f0d2c79dc5c158cf4bce2b0bc2fbd74598d75214b5971ad12d999bf919e77f24a89376d5cba0bf527d867d4c3bc7455769819cd57e8586c5fad3754626d67b\",\"updatedAt\":null,\"wellId\":\"C6\",\"numberOfParameters\":26,\"numberOfEvents\":34086,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3558207,\"acquisitionStart\":\"16:22:14\",\"acquisitionEnd\":\"16:22:57\",\"expFile\":\"01-Well-C6.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34086,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E11.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"c8980a15ab0997b092a30d330cebe7ba\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3884568,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E11.fcs\",\"tubeName\":null,\"uniqueHash\":\"7cef46633b659a015e1c8ac389b0e47a4fa07772f8df018f14b7a57cceb1a31c8e8081ca07afdfff966ea3354000554f0f7c7d899e23225187536801ae420eb8\",\"updatedAt\":null,\"wellId\":\"E11\",\"numberOfParameters\":26,\"numberOfEvents\":37224,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3884559,\"acquisitionStart\":\"16:55:33\",\"acquisitionEnd\":\"16:56:24\",\"expFile\":\"01-Well-E11.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":37224,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G12.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"a7d806aa105e1ae527a353ff898db811\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3536792,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G12.fcs\",\"tubeName\":null,\"uniqueHash\":\"67bc7ecba77733423a4e58e95f90645f3dbbe986045d7241319dced543a9ad57adca64ac3cf5798c33e6c60d1916ce404f474824384630144c2c46f54826b5f2\",\"updatedAt\":null,\"wellId\":\"G12\",\"numberOfParameters\":26,\"numberOfEvents\":33880,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3536783,\"acquisitionStart\":\"17:21:39\",\"acquisitionEnd\":\"17:22:17\",\"expFile\":\"01-Well-G12.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33880,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F8.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"706e378fd948ea751f4e0d6af9aef98c\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3576728,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F8.fcs\",\"tubeName\":null,\"uniqueHash\":\"0b98fac3f97db6f6447cebefd2a1df129674745273b964a8ffe7ac0b052107d6a540750dd93461be5bf47e8e494cea6cdc6956798162530b9be59fe19dbc3e44\",\"updatedAt\":null,\"wellId\":\"F8\",\"numberOfParameters\":26,\"numberOfEvents\":34264,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3576719,\"acquisitionStart\":\"17:05:31\",\"acquisitionEnd\":\"17:06:11\",\"expFile\":\"01-Well-F8.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34264,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G3.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"8861a6a18ae77f7739525a522efd0112\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3134520,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G3.fcs\",\"tubeName\":null,\"uniqueHash\":\"ca116341bd6bb8742927643f1a0a40561ce7f3b95d016002c597b459b6a2f8f51407e80da02317f283b8e1a3ff3d63518543c0789ed2a54cb46e408bbe9229f1\",\"updatedAt\":null,\"wellId\":\"G3\",\"numberOfParameters\":26,\"numberOfEvents\":30012,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3134511,\"acquisitionStart\":\"17:12:51\",\"acquisitionEnd\":\"17:13:20\",\"expFile\":\"01-Well-G3.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":30012,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G4.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"63783232d2f3be68e685b5810d7c141b\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3353960,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G4.fcs\",\"tubeName\":null,\"uniqueHash\":\"25fb3d2f0e0179f67d909678e623f9e7ad6343ee016c3cf6e825b86ecea21b2c40fa237debd7ceae0ea2557c687eb2d16b2e6c6ae204d4d9bb5b71414e5afd7d\",\"updatedAt\":null,\"wellId\":\"G4\",\"numberOfParameters\":26,\"numberOfEvents\":32122,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3353951,\"acquisitionStart\":\"17:13:44\",\"acquisitionEnd\":\"17:14:16\",\"expFile\":\"01-Well-G4.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32122,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F9.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"855e4cbed525ae8b827ef764350b5224\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3629456,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F9.fcs\",\"tubeName\":null,\"uniqueHash\":\"ed7f1c5b3247d5a7c4a61124fb8babda0008ef88763145f88ef16c74dff5b8409b729fa55211500fba871e3927950895539f4701eea96ce590a99744fe286739\",\"updatedAt\":null,\"wellId\":\"F9\",\"numberOfParameters\":26,\"numberOfEvents\":34771,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3629447,\"acquisitionStart\":\"17:06:36\",\"acquisitionEnd\":\"17:07:17\",\"expFile\":\"01-Well-F9.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34771,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G7.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"b33ec8277c5bae5743809d2e79979076\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3499976,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G7.fcs\",\"tubeName\":null,\"uniqueHash\":\"cb153c7873ac185e5df72a61a1106d1037e59f6f4a00440af4742a3bfa1c16c2479f2b4387ee3bebe462e004959c4f3af5c4661f324bbba622955b68cf7718fa\",\"updatedAt\":null,\"wellId\":\"G7\",\"numberOfParameters\":26,\"numberOfEvents\":33526,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3499967,\"acquisitionStart\":\"17:16:42\",\"acquisitionEnd\":\"17:17:17\",\"expFile\":\"01-Well-G7.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33526,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H1.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"55080cfcf5614991165a12fb0a59471f\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3280848,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H1.fcs\",\"tubeName\":null,\"uniqueHash\":\"4375582925b62a7e841eb3db28c715e4938a965a84dd1474e56dc7b1c637f8de528e605b945f773be2be7c3143aee33575f2a48047009a837ddd220209cb9457\",\"updatedAt\":null,\"wellId\":\"H1\",\"numberOfParameters\":26,\"numberOfEvents\":31419,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3280839,\"acquisitionStart\":\"17:22:43\",\"acquisitionEnd\":\"17:23:12\",\"expFile\":\"01-Well-H1.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31419,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G11.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"fcd936c41aaf2d60b58decaf5ab2d0fb\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3511936,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G11.fcs\",\"tubeName\":null,\"uniqueHash\":\"08421f6a92f8691b98d3b4989e454f368204ef6d270b8c5b6616dba01dc7c568f59b3bb7ea85e809847c1eab1d6b58c9dcfce3f45575d736ea7c9d4720272c02\",\"updatedAt\":null,\"wellId\":\"G11\",\"numberOfParameters\":26,\"numberOfEvents\":33641,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3511927,\"acquisitionStart\":\"17:20:38\",\"acquisitionEnd\":\"17:21:14\",\"expFile\":\"01-Well-G11.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33641,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F2.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"47beb5c03186c5e2ab5afe967ad46abe\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3429152,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F2.fcs\",\"tubeName\":null,\"uniqueHash\":\"b2c3e4fbac1e0ab577c76122fb8dcab74a9eee25896e9d4417c6f5dfee14a4a11888b6500df90d4d3da9a92f00bfa10f25e689c5f455259c357e5ddb2700c5a8\",\"updatedAt\":null,\"wellId\":\"F2\",\"numberOfParameters\":26,\"numberOfEvents\":32845,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3429143,\"acquisitionStart\":\"16:59:05\",\"acquisitionEnd\":\"16:59:42\",\"expFile\":\"01-Well-F2.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32845,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G1.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"50f389c0e65a980132aa2311d56b641c\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3269408,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G1.fcs\",\"tubeName\":null,\"uniqueHash\":\"53a7fd66dfab155d1a5b1fed6f2ce5576be456d0e492135491e9f170ecae11b04c0240b141e94cabb84aa6e0713693a6a26ea2b9fe7c233cead95b4d2741ad46\",\"updatedAt\":null,\"wellId\":\"G1\",\"numberOfParameters\":26,\"numberOfEvents\":31309,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3269399,\"acquisitionStart\":\"17:11:01\",\"acquisitionEnd\":\"17:11:31\",\"expFile\":\"01-Well-G1.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31309,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H10.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"2529d4c756874defadf97d9e3fdc56b5\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3531280,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H10.fcs\",\"tubeName\":null,\"uniqueHash\":\"eb7d4362e8be4babad5e1fd0381356bcdf12da31ae08e158f4581d886a5f88fa1bfb1de0a12d645687b78633115d73ab09e303b6c83a454fb8b6c38717ec90f5\",\"updatedAt\":null,\"wellId\":\"H10\",\"numberOfParameters\":26,\"numberOfEvents\":33827,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3531271,\"acquisitionStart\":\"17:31:22\",\"acquisitionEnd\":\"17:31:59\",\"expFile\":\"01-Well-H10.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33827,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G10.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"3f3a2a7df8cc71d82a6bd72877201c06\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3449328,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G10.fcs\",\"tubeName\":null,\"uniqueHash\":\"d7618628f39b6367154422736e64e82c4171b32dafd1b0e3d9ee33ff325855cc153be9417e040e74ba8aec2ce52c4554b41923d173fcfbf8eb998d1461fda3c1\",\"updatedAt\":null,\"wellId\":\"G10\",\"numberOfParameters\":26,\"numberOfEvents\":33039,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3449319,\"acquisitionStart\":\"17:19:38\",\"acquisitionEnd\":\"17:20:14\",\"expFile\":\"01-Well-G10.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33039,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F3.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"267e9f1c97a5d4acd259d5417be6568a\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3487600,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F3.fcs\",\"tubeName\":null,\"uniqueHash\":\"f6996f4f1857b7fd1f46caaeeb25be34c4fb5a22c2a33553cfae8a21d77469e918f3b78c58d7168c5dd34cf429d023dd9907ce9ac02bcfe923c7983ff26b51f3\",\"updatedAt\":null,\"wellId\":\"F3\",\"numberOfParameters\":26,\"numberOfEvents\":33407,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3487591,\"acquisitionStart\":\"17:00:07\",\"acquisitionEnd\":\"17:00:45\",\"expFile\":\"01-Well-F3.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33407,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H11.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"2d25fce218e93ead7a248e1e16c8fba4\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3557904,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H11.fcs\",\"tubeName\":null,\"uniqueHash\":\"9c37c17fe39849349cc5c3fe8074999ea05f4facd433db924f13127be4341bcb2c7ca97add39c5e5e19832b6b8ffef3231fc27a79ee777ddf8ec435403271a72\",\"updatedAt\":null,\"wellId\":\"H11\",\"numberOfParameters\":26,\"numberOfEvents\":34083,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3557895,\"acquisitionStart\":\"17:32:23\",\"acquisitionEnd\":\"17:33:00\",\"expFile\":\"01-Well-H11.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34083,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G8.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"bc8969320f54ef1254fe770f76143363\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3384120,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G8.fcs\",\"tubeName\":null,\"uniqueHash\":\"51ff3e7392f4ae0c4333b098893912a0d37e6f32f854f3a0d53492fafd2325985df90e51b4edc4f13273d79b735b77a52d027be87bc6c4ef40b8c0346d50ebee\",\"updatedAt\":null,\"wellId\":\"G8\",\"numberOfParameters\":26,\"numberOfEvents\":32412,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3384111,\"acquisitionStart\":\"17:17:41\",\"acquisitionEnd\":\"17:18:15\",\"expFile\":\"01-Well-G8.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32412,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G9.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"d7d551b530323ad19c355192d69070ed\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3370392,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G9.fcs\",\"tubeName\":null,\"uniqueHash\":\"eada9384899f8646cb7ec6e75cd27fa5cbc147cabccafa78d080f09ee2c176955b662a3b3ab350452a11caf935cdf4c74d847a7814e472d4034b8b87bf23d078\",\"updatedAt\":null,\"wellId\":\"G9\",\"numberOfParameters\":26,\"numberOfEvents\":32280,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3370383,\"acquisitionStart\":\"17:18:39\",\"acquisitionEnd\":\"17:19:13\",\"expFile\":\"01-Well-G9.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32280,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F6.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"5a5f70499d093bbdfea19da48d4ffb1b\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3624464,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F6.fcs\",\"tubeName\":null,\"uniqueHash\":\"f5e742f7e9fbfd8d00f4235d67ef1903c1d93075a01368daa59c4fcc96c4eac4494caf63fbbee12644f62187fbf7251072478a15d1c6f9880ee9bf93feead00f\",\"updatedAt\":null,\"wellId\":\"F6\",\"numberOfParameters\":26,\"numberOfEvents\":34723,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3624455,\"acquisitionStart\":\"17:03:25\",\"acquisitionEnd\":\"17:04:06\",\"expFile\":\"01-Well-F6.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34723,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F12.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"0d5bd55f8ec884856a25fc3b7284764c\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3916808,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F12.fcs\",\"tubeName\":null,\"uniqueHash\":\"064ee62e8ad73ffa30241690845ccfddde91b1b24b7adf9b83dceda62241cd21fae8b17e3f22af0049e97d5cc07eada311d3b3c959ea69d235f86f70a6a734a6\",\"updatedAt\":null,\"wellId\":\"F12\",\"numberOfParameters\":26,\"numberOfEvents\":37534,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3916799,\"acquisitionStart\":\"17:09:50\",\"acquisitionEnd\":\"17:10:35\",\"expFile\":\"01-Well-F12.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":37534,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E5.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"354c31cc116d0d225558f060ce539f16\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3530136,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E5.fcs\",\"tubeName\":null,\"uniqueHash\":\"f49261d04cf00eda503d89f736c488f27545c30074e1602692a7d82be9ec42382ed60ca315e5a59f74c4ea2caaad7a620f1c9b61244a45f80f9746fa1f432024\",\"updatedAt\":null,\"wellId\":\"E5\",\"numberOfParameters\":26,\"numberOfEvents\":33816,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3530127,\"acquisitionStart\":\"16:48:48\",\"acquisitionEnd\":\"16:49:30\",\"expFile\":\"01-Well-E5.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33816,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G5.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"d9a9cbd7e1ee54d8b03448dce7de1262\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3347200,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G5.fcs\",\"tubeName\":null,\"uniqueHash\":\"c90451100c1c3c562485f6c8a183c163573a44c0d83293a3c73663d4c2d21c8446fd04792ea7f2b46461fc7dd56f2431ec191b781b9c3169427405ca041a7fda\",\"updatedAt\":null,\"wellId\":\"G5\",\"numberOfParameters\":26,\"numberOfEvents\":32057,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3347191,\"acquisitionStart\":\"17:14:41\",\"acquisitionEnd\":\"17:15:14\",\"expFile\":\"01-Well-G5.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32057,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G2.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"e28c0c3def83f557a76d1f2e666813f1\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3276584,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G2.fcs\",\"tubeName\":null,\"uniqueHash\":\"c386194248823858d9b32f1da95af596e5bd5231f386503c641a7f35a3e44979b096287bc0e023f366656034a4b25dc13b02f3d6af44e1e547a59110d64d3e56\",\"updatedAt\":null,\"wellId\":\"G2\",\"numberOfParameters\":26,\"numberOfEvents\":31378,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3276575,\"acquisitionStart\":\"17:11:55\",\"acquisitionEnd\":\"17:12:26\",\"expFile\":\"01-Well-G2.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31378,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F5.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"77a125664c077142e10c40170254078a\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3661800,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F5.fcs\",\"tubeName\":null,\"uniqueHash\":\"f1c1bd1e4a5691c286f90c70ae6cc03bec3e0f90222f52f236d6ff8ea4f6c1cbb000cc31f0c137b8ee49b423f666e91b5347ece2d4d4f18920f5ee3ed371a33a\",\"updatedAt\":null,\"wellId\":\"F5\",\"numberOfParameters\":26,\"numberOfEvents\":35082,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3661791,\"acquisitionStart\":\"17:02:18\",\"acquisitionEnd\":\"17:03:01\",\"expFile\":\"01-Well-F5.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35082,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E9.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"c08b3d148e4cd9ccb14abdde3fca2174\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3601480,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E9.fcs\",\"tubeName\":null,\"uniqueHash\":\"98f821db7d1b16ecf2fcb8af89f3ee0db950c4281ad3f43456abbb7c38d27798f0e3f7ae87e43fb27089fc1bafe96d9e7ed8c8ee921a821c58968883e293f8f9\",\"updatedAt\":null,\"wellId\":\"E9\",\"numberOfParameters\":26,\"numberOfEvents\":34502,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3601471,\"acquisitionStart\":\"16:53:14\",\"acquisitionEnd\":\"16:53:57\",\"expFile\":\"01-Well-E9.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34502,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-G6.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"2b35fb86ce56c6b54a5083d3a1043f91\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3706104,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-G6.fcs\",\"tubeName\":null,\"uniqueHash\":\"1167b784cc7507c87f76181217fecf469ea31851fcc43587a44d916859e40878284999e63f5c1ad7be6fab556127a406528e3b53e79af3037c08be2f88454ee8\",\"updatedAt\":null,\"wellId\":\"G6\",\"numberOfParameters\":26,\"numberOfEvents\":35508,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3706095,\"acquisitionStart\":\"17:15:38\",\"acquisitionEnd\":\"17:16:18\",\"expFile\":\"01-Well-G6.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35508,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H7.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"aedc7fde84d50268cf8828079234623c\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3115176,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H7.fcs\",\"tubeName\":null,\"uniqueHash\":\"690c6979939d9e258d07f17b0a92ad1ca85eb974ffef156d02bd45afd59f80910508082af72b80189494aa27542d1ab0b11559abf178446d425b979c837d592c\",\"updatedAt\":null,\"wellId\":\"H7\",\"numberOfParameters\":26,\"numberOfEvents\":29826,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3115167,\"acquisitionStart\":\"17:28:31\",\"acquisitionEnd\":\"17:29:01\",\"expFile\":\"01-Well-H7.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":29826,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E2.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"dfbfd467039f696f4068f02395d5503c\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3524104,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E2.fcs\",\"tubeName\":null,\"uniqueHash\":\"dc831ab587aaf4f6c568f0339be92b04664c316f1af95ab68e7beaeaeec9a01638d57d1c328b4c01c43899f251d1299070e05208d54e643dc056ea6d599a1897\",\"updatedAt\":null,\"wellId\":\"E2\",\"numberOfParameters\":26,\"numberOfEvents\":33758,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3524095,\"acquisitionStart\":\"16:45:39\",\"acquisitionEnd\":\"16:46:18\",\"expFile\":\"01-Well-E2.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33758,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H5.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"b42bb7e912c7d7447e86ba7ba8477cfb\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3328792,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H5.fcs\",\"tubeName\":null,\"uniqueHash\":\"6581aacc636c1f42ada75827b2869c5c47884960eab677492bd6eb349e09698bc6d9d43168343fb7e96f0b75de6a027e99f3df6b0819344659d23d3d355ba5fb\",\"updatedAt\":null,\"wellId\":\"H5\",\"numberOfParameters\":26,\"numberOfEvents\":31880,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3328783,\"acquisitionStart\":\"17:26:34\",\"acquisitionEnd\":\"17:27:07\",\"expFile\":\"01-Well-H5.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31880,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F4.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"f886ac0eec82e1d462a40d183f82dde1\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3774744,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F4.fcs\",\"tubeName\":null,\"uniqueHash\":\"72475a869b752836dad5c1fa5039cdac322653e5594c7e45437288ccaba9bbef3cff0b8f756df201cc948db264fb7278f2b0e020ff1af0c16d7144dc20599b21\",\"updatedAt\":null,\"wellId\":\"F4\",\"numberOfParameters\":26,\"numberOfEvents\":36168,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3774735,\"acquisitionStart\":\"17:01:09\",\"acquisitionEnd\":\"17:01:53\",\"expFile\":\"01-Well-F4.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":36168,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F11.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"894b58a426f50ef60cdc95b860daf211\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3460664,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F11.fcs\",\"tubeName\":null,\"uniqueHash\":\"49f3703d66a8c5b23da9f34c8a05b14effb4fe4adeb9903b314a05575a69be0d1c677e5d6e72eae9c63b40ed385d81f328e332067d32a7b7b09add893b810d82\",\"updatedAt\":null,\"wellId\":\"F11\",\"numberOfParameters\":26,\"numberOfEvents\":33148,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3460655,\"acquisitionStart\":\"17:08:48\",\"acquisitionEnd\":\"17:09:26\",\"expFile\":\"01-Well-F11.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33148,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F1.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"e9aeb630db034ae7503459f44ffebca1\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3380376,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F1.fcs\",\"tubeName\":null,\"uniqueHash\":\"481573e6955acd674418107ac49f686e6f563e5bf4cc5d78f795b27ff0ac68c12b3f3e56b89c588d73a24142ea3ac5ac2e3860914300f9a20f03ffc47497a639\",\"updatedAt\":null,\"wellId\":\"F1\",\"numberOfParameters\":26,\"numberOfEvents\":32376,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3380367,\"acquisitionStart\":\"16:58:04\",\"acquisitionEnd\":\"16:58:40\",\"expFile\":\"01-Well-F1.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32376,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H2.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"df42e232a29b55ce91cc5ceea5204e3b\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3650568,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H2.fcs\",\"tubeName\":null,\"uniqueHash\":\"772c2a17683ad71068aa085815a081ae9566bf318b6e5a038ce6ba242b76251f822ed55cca62855ba1c394f9eaf4e4011a7468ca8bd6c1fed4c783e05a10ee14\",\"updatedAt\":null,\"wellId\":\"H2\",\"numberOfParameters\":26,\"numberOfEvents\":34974,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3650559,\"acquisitionStart\":\"17:23:36\",\"acquisitionEnd\":\"17:24:11\",\"expFile\":\"01-Well-H2.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34974,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H4.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"175de4442cd5fd26f11e0c3d45be2ad8\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3662944,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H4.fcs\",\"tubeName\":null,\"uniqueHash\":\"f3e3bac68e3d00772e20cfbe5584557c183cca6601d109576eced9c89c63058828791827365f52720cab86133a9372e2a471dae52e91d0d6fd5065913a38e30c\",\"updatedAt\":null,\"wellId\":\"H4\",\"numberOfParameters\":26,\"numberOfEvents\":35093,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3662935,\"acquisitionStart\":\"17:25:33\",\"acquisitionEnd\":\"17:26:09\",\"expFile\":\"01-Well-H4.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35093,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E8.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"9d13447fcad135a3c6c6090c2964cab2\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3684472,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E8.fcs\",\"tubeName\":null,\"uniqueHash\":\"c633295ba7cfb9ce1dcf8881ec4f762d1c7b9a78885c9c2700366a37b93353bfa72b013c72a9aac2a7ff9cd7496c34c3836f9a47a2e2b778920b6361a1ce98c1\",\"updatedAt\":null,\"wellId\":\"E8\",\"numberOfParameters\":26,\"numberOfEvents\":35300,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3684463,\"acquisitionStart\":\"16:52:05\",\"acquisitionEnd\":\"16:52:50\",\"expFile\":\"01-Well-E8.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35300,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E12.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"6926bd4dc26d6f9811d1bc1711a26d95\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3793672,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E12.fcs\",\"tubeName\":null,\"uniqueHash\":\"aee09cef12b44183ab7cd6c13643beebdecef6199a8514fa109360b7c100a3cea2901333ae97281d6da9df9fe3e66d4a2353c575d8adba671aff6fd5956c02a2\",\"updatedAt\":null,\"wellId\":\"E12\",\"numberOfParameters\":26,\"numberOfEvents\":36350,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3793663,\"acquisitionStart\":\"16:56:48\",\"acquisitionEnd\":\"16:57:38\",\"expFile\":\"01-Well-E12.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":36350,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H8.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"fce4a8deb1538fc22b4bfafa2f4dea91\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3273776,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H8.fcs\",\"tubeName\":null,\"uniqueHash\":\"125f068141c114fe5ffe349497c73e2f9ecf9af9817613a014dc27e45f86739a64637ebf6d1823ce7f77a60c4d7dbc95a6d4d71e07a6d39e26cdfa7783f96f95\",\"updatedAt\":null,\"wellId\":\"H8\",\"numberOfParameters\":26,\"numberOfEvents\":31351,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3273767,\"acquisitionStart\":\"17:29:26\",\"acquisitionEnd\":\"17:29:57\",\"expFile\":\"01-Well-H8.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31351,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E3.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"3b25c1a595a72a781714723df85eeb17\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3519320,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E3.fcs\",\"tubeName\":null,\"uniqueHash\":\"a7e87a6b8dcf803a6a0659b7de58a73e383144c1123993fe34425b497fdcb80ba33674c5c200b37bf9d669e959e73b46859d450d360743a1d261b30c107d00c4\",\"updatedAt\":null,\"wellId\":\"E3\",\"numberOfParameters\":26,\"numberOfEvents\":33712,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3519311,\"acquisitionStart\":\"16:46:42\",\"acquisitionEnd\":\"16:47:22\",\"expFile\":\"01-Well-E3.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33712,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E6.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"7c679815497f58c238af13e635c488b9\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3473560,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E6.fcs\",\"tubeName\":null,\"uniqueHash\":\"d2019e418d6441f89477a800f8f64e3a64b31dc3398959695dc92fd4c07439b33525c99a406ee58ebb363ae6b1316f450bfb7101bd59d36d082b31663f2387a2\",\"updatedAt\":null,\"wellId\":\"E6\",\"numberOfParameters\":26,\"numberOfEvents\":33272,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3473551,\"acquisitionStart\":\"16:49:54\",\"acquisitionEnd\":\"16:50:33\",\"expFile\":\"01-Well-E6.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33272,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H9.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"a8a5abdd1f0680fe846ee105bbf45aad\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3496856,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H9.fcs\",\"tubeName\":null,\"uniqueHash\":\"6e9e8f7282b7ba25ce7b20b432ebf92d0f2a97c57c737766d9233989335eb2efe262f1c1e7670888b6cf4d3176f3d471c63a384bd7ec02ae02aa0e862ebf9bca\",\"updatedAt\":null,\"wellId\":\"H9\",\"numberOfParameters\":26,\"numberOfEvents\":33496,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3496847,\"acquisitionStart\":\"17:30:22\",\"acquisitionEnd\":\"17:30:57\",\"expFile\":\"01-Well-H9.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":33496,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H12.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"e296e7426e3322744c668d32da122231\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3627376,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H12.fcs\",\"tubeName\":null,\"uniqueHash\":\"ba0f2f01201f07f1bab6fc98d1a9d3d000a87e7e5c0904e9a685a854ecc38f55433ec6f5a3c49fee3cd99adb25e6216905e174e445bdcd5b00c926a77953ec7f\",\"updatedAt\":null,\"wellId\":\"H12\",\"numberOfParameters\":26,\"numberOfEvents\":34751,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3627367,\"acquisitionStart\":\"17:33:25\",\"acquisitionEnd\":\"17:34:04\",\"expFile\":\"01-Well-H12.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":34751,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F10.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"e0c6ad225caf1926f5584f448ba354f4\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3739904,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F10.fcs\",\"tubeName\":null,\"uniqueHash\":\"00f61cd4cbcd6c62127446b8d22b09ceeb3e7fc6b767943ead439063f3172e4dbe9d0f0b7de1d724a7617eaa71644a375bf5897db73f06418bae527cc58ffc31\",\"updatedAt\":null,\"wellId\":\"F10\",\"numberOfParameters\":26,\"numberOfEvents\":35833,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3739895,\"acquisitionStart\":\"17:07:41\",\"acquisitionEnd\":\"17:08:23\",\"expFile\":\"01-Well-F10.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35833,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-F7.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"5a41d18546ddad572f3f49a8a6485d95\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3444752,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-F7.fcs\",\"tubeName\":null,\"uniqueHash\":\"f9634d277982a9d5fad4849092d06cf318ac76ff6bc193116f25ead3b7a372cbd7e618860b5d2e790afe18d5d0bcfbb482fe98d24a673421ad0e212ec3b0cc27\",\"updatedAt\":null,\"wellId\":\"F7\",\"numberOfParameters\":26,\"numberOfEvents\":32995,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3444743,\"acquisitionStart\":\"17:04:30\",\"acquisitionEnd\":\"17:05:07\",\"expFile\":\"01-Well-F7.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32995,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H6.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"42358faf1294a3bf1fb8f7c706a768ee\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3392440,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H6.fcs\",\"tubeName\":null,\"uniqueHash\":\"51934945d0bb2414ff0ec7484e386e15a782c681e76aefb94f18a59031ea35ae7dde2cbcceffa071ad320c2f3a1841980c3c51c7249d3da14e70a9dee604be1d\",\"updatedAt\":null,\"wellId\":\"H6\",\"numberOfParameters\":26,\"numberOfEvents\":32492,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3392431,\"acquisitionStart\":\"17:27:31\",\"acquisitionEnd\":\"17:28:06\",\"expFile\":\"01-Well-H6.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32492,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-H3.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"cd76afeb8449744aed89da5866873c7b\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3302896,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-H3.fcs\",\"tubeName\":null,\"uniqueHash\":\"18dc1abc054e16fbd5f0f353acdb96566b96944b1653ddceff1b1a9345e9e70e7272911c699449e58d314b08b0914580e7a75554e8da50bd45efe0c3e683e0b2\",\"updatedAt\":null,\"wellId\":\"H3\",\"numberOfParameters\":26,\"numberOfEvents\":31631,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3302887,\"acquisitionStart\":\"17:24:36\",\"acquisitionEnd\":\"17:25:08\",\"expFile\":\"01-Well-H3.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":31631,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E7.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"b3a91b5315c2d1eae3ac24cac1c786ee\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3654312,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E7.fcs\",\"tubeName\":null,\"uniqueHash\":\"881d06d11ecefffe9cbbd8813b9f8edf909d0d77a9c2af8a68fe7e06f4b1174b77bec5331d29da9bc85858213ad705d2295a152d2d9b4958137049b676ea3ced\",\"updatedAt\":null,\"wellId\":\"E7\",\"numberOfParameters\":26,\"numberOfEvents\":35010,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3654303,\"acquisitionStart\":\"16:50:57\",\"acquisitionEnd\":\"16:51:41\",\"expFile\":\"01-Well-E7.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":35010,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null},{\"id\":null,\"filename\":\"01-Well-E4.fcs\",\"cytometer\":\"CytoFLEX\",\"mode\":\"L\",\"md5sum\":\"1367f893dc50a788513d00a6607cf889\",\"clustered\":false,\"applyCompensation\":false,\"category\":1,\"channelCount\":26,\"createdAt\":null,\"dataType\":\"F\",\"detectedCytometer\":null,\"experimentId\":null,\"fcsFileVersion\":\"3.0\",\"fileSize\":3365920,\"plateId\":\"01\",\"plateName\":null,\"sampleName\":\"01-Well-E4.fcs\",\"tubeName\":null,\"uniqueHash\":\"1f5a5474b3ec21194fe4fec8ed7f13f6b4c571f1d1a5336f764786ca4bd924270179b4caa201f4c489e58478c32bbdefd93210be37b6ac02aa16004a9caf1030\",\"updatedAt\":null,\"wellId\":\"E4\",\"numberOfParameters\":26,\"numberOfEvents\":32237,\"instrument\":null,\"dataStart\":13264,\"dataEnd\":3365911,\"acquisitionStart\":\"16:47:46\",\"acquisitionEnd\":\"16:48:24\",\"expFile\":\"01-Well-E4.fcs\",\"operatorName\":\"BCI CytoFLEX\",\"operatingSystem\":\"Microsoft Windows NT 6.1.7601 Service Pack 1\",\"creatorSoftware\":null,\"experimentDate\":\"14-Feb-2020\",\"experimentName\":null,\"exportTime\":null,\"exportUser\":null,\"windowExtension\":null,\"totalEvents\":32237,\"timeStep\":0.00002,\"analysisStart\":0,\"analysisEnd\":0,\"supplementalStart\":0,\"supplementalEnd\":0,\"guid\":null,\"threshold\":null,\"severity\":null}]}",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "clone_illustration_id",
-			"value": "2519",
-			"enabled": true
-		},
-		{
-			"key": "exp_id_illustration_panels",
-			"value": "194",
-			"enabled": true
-		},
-		{
-			"key": "pi_email",
-			"value": "ankit+1@cytobank.org",
-			"enabled": true
-		},
-		{
-			"key": "exp_id_no_gates_comps",
-			"value": "2546",
-			"enabled": true
-		},
-		{
-			"key": "exp_id_with_few_fcs",
-			"value": "2541",
-			"enabled": true
-		},
-		{
-			"key": "exp_id_with_panels",
-			"value": "2543",
-			"enabled": true
-		},
-		{
-			"key": "SelectiveClone_Exp",
-			"value": "PBMC (Proper scales) -- ForSelectiveClone-API",
-			"enabled": true
-		},
-		{
-			"key": "SelectiveClone_Exp_Id",
-			"value": "1634",
-			"enabled": true
-		},
-		{
-			"key": "exp_id_annotations",
-			"value": "2544",
-			"enabled": true
-		},
-		{
-			"key": "exp_id_gates_comps",
-			"value": "2545",
-			"enabled": true
-		},
-		{
-			"key": "exp_id_comps",
-			"value": "2547",
-			"enabled": true
-		},
-		{
-			"key": "exp_id_project_no_pi_access",
-			"value": "2550",
-			"enabled": true
-		},
-		{
-			"key": "FlowSOM_exp_id",
-			"value": "2213",
-			"enabled": true
-		},
-		{
-			"key": "FlowSOM_experiment",
-			"value": "FlowSOM API--master--DO--NOT--DELETE",
-			"enabled": true
-		},
-		{
-			"key": "flowsom_id",
-			"value": "644",
-			"enabled": true
-		},
-		{
-			"key": "cloned_flowsom_exp_id",
-			"value": "3228",
-			"enabled": true
-		},
-		{
-			"key": "flowsom_attachment_id",
-			"value": "8407",
-			"enabled": true
-		},
-		{
-			"key": "child_flowsom_id",
-			"value": "566",
-			"enabled": true
-		},
-		{
-			"key": "flowsom_analysis_id",
-			"value": "2313",
-			"enabled": true
-		},
-		{
-			"key": "externalFlowSOMAnalysisId",
-			"value": "601",
-			"enabled": true
-		},
-		{
-			"key": "created_flowsom_exp",
-			"value": "3405",
+			"key": "population_id_0",
+			"value": "1",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "population_id_1",
-			"value": "3",
+			"value": "2",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "population_id_2",
-			"value": "2",
+			"value": "3",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "population_id_3",
 			"value": "4",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "population_id_4",
 			"value": "5",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "population_id_5",
 			"value": "6",
+			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "population_id_6",
 			"value": "7",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "owner_flowsom_id",
-			"value": "600",
+			"key": "population_id_7",
+			"value": "8",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "member_flowsom_id",
-			"value": "653",
+			"key": "population_id_8",
+			"value": "9",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "URL",
-			"value": "https://qa-janus.cytobank.org",
+			"key": "population_id_9",
+			"value": "10",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "auth_token",
-			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmODA1M2NkZDQ4MjMxZDNhMTQ2MDJkYWYwYWJmZWYzOCIsImV4cCI6MTU2Nzc5ODA0NiwiYXVkIjoiY3l0b2JhbmtfYXBpX3YxX3VzZXJzIiwidXNlcl9pZCI6NSwiaWF0IjoxNTY3NzY5MjQ2LCJpc3MiOiJodHRwczovL3FhLWFyaWVsLmN5dG9iYW5rLm9yZy8iLCJuYmYiOjE1Njc3NjkyNDYsInN1YiI6ImN5dG9iYW5rX2FwaV92MSJ9.BG-LWPEU9lZz1mQsHwADQUZ5P7ZPEN4215FlCZ_KAd8",
+			"key": "population_id_10",
+			"value": "11",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "gold_std_pbmc_fcsFilesDetails",
-			"value": "",
+			"key": "population_id_11",
+			"value": "12",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "tid",
-			"value": "",
+			"key": "population_id_12",
+			"value": "13",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "tId",
-			"value": "",
+			"key": "population_id_13",
+			"value": "14",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "accessKeyId",
-			"value": "",
+			"key": "population_id_14",
+			"value": "15",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "awsRegion",
-			"value": "",
+			"key": "population_id_15",
+			"value": "16",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "secretAccessKey",
-			"value": "",
+			"key": "population_id_16",
+			"value": "17",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "sessionToken",
-			"value": "",
+			"key": "population_id_17",
+			"value": "18",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "download_single_fcs",
-			"value": "",
+			"key": "population_id_18",
+			"value": "19",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_comp_file_id_1_hash",
-			"value": "",
+			"key": "population_id_19",
+			"value": "20",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "attachment_hash",
-			"value": "",
+			"key": "population_id_20",
+			"value": "21",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "attachment_name",
-			"value": "",
+			"key": "population_id_21",
+			"value": "22",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "variable_key",
-			"value": "",
+			"key": "population_id_22",
+			"value": "23",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "dev-orcus",
-			"value": "",
+			"key": "population_id_23",
+			"value": "24",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "qa-titan",
-			"value": "qa-titan-api.cytobank.org",
+			"key": "population_id_24",
+			"value": "25",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "upload_bucket_name",
-			"value": "qa-titan-dev-us-east-1-upload",
+			"key": "population_id_25",
+			"value": "26",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_comp_file_id_2_hash",
-			"value": "",
+			"key": "population_id_26",
+			"value": "27",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_1_hash",
-			"value": "",
+			"key": "population_id_27",
+			"value": "28",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_2_hash",
-			"value": "",
+			"key": "population_id_28",
+			"value": "29",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_3_hash",
-			"value": "",
+			"key": "population_id_29",
+			"value": "30",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_4_hash",
-			"value": "",
+			"key": "population_id_30",
+			"value": "31",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_1_filename",
-			"value": "",
+			"key": "population_id_31",
+			"value": "32",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_2_filename",
-			"value": "",
+			"key": "NEW_CREATED_ANALYSIS_ID",
+			"value": "758",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_3_filename",
-			"value": "",
+			"key": "NEW_CREATED_INFERENCE_ANALYSIS_ID",
+			"value": "742",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "fcs_file_id_4_filename",
-			"value": "",
+			"key": "NEW_CREATED_ANALYSIS_ID_FOR_USING_IN_DELETE_CALL",
+			"value": "754",
+			"type": "any",
 			"enabled": true
 		},
 		{
-			"key": "attachment_id_hash",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "attachment_id_name",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_comp_file_id_3_hash",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_comp_file_name_1",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_comp_file_name_2",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_comp_file_name_3",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "dev02",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "transaction_id",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "startAfter",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "analysis_type",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "analysis_id",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "token_prasad",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "SPADE_API_Master",
-			"value": "time sliced pbmc-master API For SPADE--Do Not Delete",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_0",
-			"value": "11905",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_0_hash",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_5_hash",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_6_hash",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_7_hash",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_8_hash",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_9_hash",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_10_hash",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_0_filename",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_5_filename",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_6_filename",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_7_filename",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_8_filename",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_9_filename",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "fcs_file_id_10_filename",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "gold_std_pbmc_fcsFilesDetails_ds",
+			"key": "cloned_exp_id",
 			"value": "",
 			"type": "any",
 			"enabled": true
 		}
 	],
 	"_postman_variable_scope": "environment",
-	"_postman_exported_at": "2022-01-31T07:42:57.329Z",
-	"_postman_exported_using": "Postman/9.8.3"
+	"_postman_exported_at": "2023-02-06T07:54:46.812Z",
+	"_postman_exported_using": "Postman/10.9.2"
 }

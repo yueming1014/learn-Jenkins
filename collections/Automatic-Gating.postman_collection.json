@@ -1,0 +1,1257 @@
+{
+	"info": {
+		"_postman_id": "ab09fbae-b81d-496e-9b8c-77574a27a00e",
+		"name": "Automatic Gating",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19657249"
+	},
+	"item": [
+		{
+			"name": "Authenticate User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"user_jwt\", data.user.authToken);",
+							"postman.setGlobalVariable(\"user_jwt\", data.user.authToken);",
+							"postman.setEnvironmentVariable(\"userid\", data.user.id);",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";",
+							"tests[\"Response body contains authToken\"] = responseBody.has(\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.\");",
+							"if (data.user.id > 2){",
+							"    postman.setEnvironmentVariable(\"other_usersid\", data.user.id - 1);",
+							"}else{",
+							"    postman.setEnvironmentVariable(\"other_usersid\", data.user.id + 1);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "charset",
+						"value": "UTF-8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{{user_name}}\",\n    \"password\": \"{{userpassword}}\"\n}"
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/authenticate",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"authenticate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "authenticate-user.json",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "charset",
+								"value": "UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"{{user_name}}\",\n    \"password\": \"{{userpassword}}\"\n}"
+						},
+						"url": {
+							"raw": "https://{{cyto_server}}/cytobank/api/v1/authenticate",
+							"protocol": "https",
+							"host": [
+								"{{cyto_server}}"
+							],
+							"path": [
+								"cytobank",
+								"api",
+								"v1",
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "javascript",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate",
+							"name": "Cache-Control",
+							"description": ""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": ""
+						},
+						{
+							"key": "Content-Length",
+							"value": "758",
+							"name": "Content-Length",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": ""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 May 2016 05:20:43 GMT",
+							"name": "Date",
+							"description": ""
+						},
+						{
+							"key": "ETag",
+							"value": "\"8864d52516a23f4b44bda1b304617730\"",
+							"name": "ETag",
+							"description": ""
+						},
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"name": "Server",
+							"description": ""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31622400; includeSubDomains",
+							"name": "Strict-Transport-Security",
+							"description": ""
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.769000",
+							"name": "X-Runtime",
+							"description": ""
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=Edge,chrome=1",
+							"name": "X-UA-Compatible",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\"user\":{\"id\":110,\"username\":\"swapnil01\",\"location\":\"Mountain View, CA\",\"organization\":\"Cytobank Inc.\",\"twitter\":\"\",\"bio\":\"\",\"firstName\":\"Swapnil01dev01\",\"lastName\":\"Patne01\",\"email\":\"swapnil+1dev01@cytobank.org\",\"principalInvestigatorId\":null,\"hideEmail\":true,\"createdAt\":\"2016-03-29T12:52:21Z\",\"updatedAt\":\"2016-05-23T05:20:43Z\",\"lastLoginAt\":\"2016-05-13T08:58:05Z\",\"lastLoginIp\":\"49.248.212.18\",\"authToken\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NTU2YjM1MzE4MGVjYjcyMDMyM2M2OTlkMjRjZWJkMCIsImV4cCI6MTQ2NDAwOTY0MiwiYXVkIjoiY3l0b2JhbmtfYXBpX3YxX3VzZXJzIiwidXNlcl9pZCI6MTEwLCJpYXQiOjE0NjM5ODA4NDIsImlzcyI6Imh0dHBzOi8vZGV2MDEuY3l0b2Jhbmsub3JnLyIsIm5iZiI6MTQ2Mzk4MDg0Miwic3ViIjoiY3l0b2JhbmtfYXBpX3YxIn0.cv_PllzIhwqdKdwFVaoG9ME_PrK1y0qdgQ5Q0MXue44\"}}"
+				}
+			]
+		},
+		{
+			"name": "List Exps",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";",
+							"var data = JSON.parse(responseBody);",
+							"for (var i =0; i < data.experiments.length; i++){",
+							"    if (data.experiments[i].experimentName == \"Plate data\"){",
+							"        postman.setEnvironmentVariable(\"experiment_id\", data.experiments[i].id);",
+							"        postman.setEnvironmentVariable(\"exp_version\", data.experiments[i].version);",
+							"        break;",
+							"    }",
+							"}",
+							"tests[\"Body contains list of experiments\"] = data.experiments.length >= 1;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments"
+					]
+				},
+				"description": "List All experimetns for the user"
+			},
+			"response": []
+		},
+		{
+			"name": "Clone Experiment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"cloned_exp_id\", data.experiment.id);",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";",
+							"tests[\"Experiment cloned successfully\"] = data !== \"\" && typeof data.experiment === 'object';"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{experiment_id}}/clone",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{experiment_id}}",
+						"clone"
+					]
+				},
+				"description": "Clone Experiment for user, provided user has access to clone it, other wise return informative error."
+			},
+			"response": []
+		},
+		{
+			"name": "List FCS Files",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";",
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Body contains list of fcs files\"] = data.fcsFiles.length >= 1;",
+							"for (var i = 0; i < data.fcsFiles.length; i++) {",
+							"    postman.setEnvironmentVariable(\"fcs_file_id_\" + [i], data.fcsFiles[i].id);",
+							"}",
+							"var all_fcs_file_ids = data.fcsFiles[0].id;",
+							"for (var i = 1; i < data.fcsFiles.length; i++) {",
+							"    all_fcs_file_ids = (all_fcs_file_ids + \", \" + data.fcsFiles[i].id);",
+							"}",
+							"postman.setEnvironmentVariable(\"all_fcs_file_ids\", all_fcs_file_ids);",
+							"for (var i = 0; i < data.fcsFiles.length; i++) {",
+							"    data.fcsFiles[i].id = null;",
+							"    data.fcsFiles[i].experimentId = null;",
+							"    data.fcsFiles[i].createdAt = null;",
+							"    data.fcsFiles[i].updatedAt = null;",
+							"    data.fcsFiles[i].experimentName = null;",
+							"}",
+							"var respBody = JSON.stringify(data);",
+							"postman.setEnvironmentVariable(\"gold_std_pbmc_fcsFilesDetails_ds\", respBody);",
+							"/*if (typeof environment.gold_std_pbmc_fcsFilesDetails_ds === 'undefined' || environment.gold_std_pbmc_fcsFilesDetails_ds === \"\"){",
+							"    postman.setEnvironmentVariable(\"gold_std_pbmc_fcsFilesDetails_ds\", respBody);",
+							"}",
+							"tests[\"Body matches gold standard data\"] = respBody === environment.gold_std_pbmc_fcsFilesDetails_ds;*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/fcs_files",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"fcs_files"
+					]
+				},
+				"description": "List all FCS files for the given experiment id for the user."
+			},
+			"response": []
+		},
+		{
+			"name": "List Populations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";",
+							"var data = JSON.parse(responseBody);",
+							"",
+							"for (var i =0; i < data.populations.length; i++){",
+							"//if (data.populations[i].name==environment.population_1){",
+							"postman.setEnvironmentVariable(\"population_id_\"+[i], data.populations[i].gateSetId);",
+							"}",
+							"//else if(data.populations[i].name==environment.population_2){",
+							"//postman.setEnvironmentVariable(\"population_id_1\", data.populations[i].gateSetId);",
+							"//}",
+							"//}",
+							"tests[\"Body contains list of populations\"] = data.populations.length >= 1;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/populations",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"populations"
+					]
+				},
+				"description": "List populations for an experiment"
+			},
+			"response": []
+		},
+		{
+			"name": "Create autogating train analysis",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;\r",
+							"var data = JSON.parse(responseBody); \r",
+							"pm.environment.set(\"NEW_CREATED_ANALYSIS_ID\", data.auto_gate.id);\r",
+							"\r",
+							"// var incr_value= pm.environment.get(\"NEW_CREATED_ANALYSIS_ID\");\r",
+							"// var value = 1;\r",
+							"// var recentvalue= +incr_value + +value\r",
+							"// pm.test(\"Incre value is \"+recentvalue)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  \"name\": \"API Autogating Analysis{{$timestamp}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{ANALYSIS_TYPE_TRAIN}}/",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{ANALYSIS_TYPE_TRAIN}}",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update autogating training analysis details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"options\":\r\n  { \r\n    \"createBlindTestExperiment\": false,\r\n    //\"desiredEventsPerFile\": 50000,\r\n    \"desiredTotalEvents\": 100000,\r\n    \"eventSamplingMethod\": \"proportional\",\r\n    \"fcsFileIds\": [{{fcs_file_id_1}}, {{fcs_file_id_2}}, {{fcs_file_id_3}}, {{fcs_file_id_4}}, {{fcs_file_id_5}}, {{fcs_file_id_6}}, {{fcs_file_id_7}}, {{fcs_file_id_8}}, {{fcs_file_id_9}}, {{fcs_file_id_10}}, {{fcs_file_id_11}}, {{fcs_file_id_12}}, {{fcs_file_id_13}}, {{fcs_file_id_14}}, {{fcs_file_id_15}}],\r\n    \"gateSetIds\": [{{population_id_1}}, {{population_id_2}}, {{population_id_3}},  {{population_id_4}}],\r\n    \"learningMagnification\": 1,\r\n    \"optimalClusters\": 3,\r\n    \"randomSeed\": null\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/auto_gate_train/{{NEW_CREATED_ANALYSIS_ID}}",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"auto_gate_train",
+						"{{NEW_CREATED_ANALYSIS_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Run autogating analysis",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 202\"] = responseCode.code === 202;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{NEW_CREATED_ANALYSIS_ID}}/run",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{NEW_CREATED_ANALYSIS_ID}}",
+						"run"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show autogating analysis status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";",
+							"",
+							"function sleep(milliseconds) {",
+							"  var start = new Date().getTime();",
+							"  for (var i = 0; i < 1e7; i++) {",
+							"    if ((new Date().getTime() - start) > milliseconds) {",
+							"      break;",
+							"    }",
+							"  }",
+							"}",
+							"",
+							"var data = JSON.parse(responseBody);",
+							"if (data.advanced_analyses_status.status !== \"Completed\") {",
+							"  sleep(2000);",
+							"  postman.setNextRequest(\"Show autogating analysis status\");",
+							"  console.log(\"Will run 'Show autogating analysis status' once again and current status is: \"+data.advanced_analyses_status.status);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{NEW_CREATED_ANALYSIS_ID}}/status",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{NEW_CREATED_ANALYSIS_ID}}",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show autogating analysis details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{NEW_CREATED_ANALYSIS_ID}}?include_settings=1",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{NEW_CREATED_ANALYSIS_ID}}"
+					],
+					"query": [
+						{
+							"key": "include_settings",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List autogating train analyses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;\r",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";\r",
+							"/*var data = JSON.parse(responseBody);\r",
+							"\r",
+							"for (var i =0; i < data.autogatetrain.length; i++){\r",
+							"    if (data.autogatetrain[i].name == \"Selenium's Autogating inference analysis 1\")\r",
+							"    {\r",
+							"       pm.environment.set(\"ANALYSIS_ID\", data.autogatetrain[i].id);\r",
+							"       break;\r",
+							"    }\r",
+							"}*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{ANALYSIS_TYPE_TRAIN}}",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{ANALYSIS_TYPE_TRAIN}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create autogating inference analysis",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;\r",
+							"var data = JSON.parse(responseBody); \r",
+							"pm.environment.set(\"NEW_CREATED_INFERENCE_ANALYSIS_ID\", data.auto_gate.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  \"name\": \"API Autogating Inference Analysis{{$timestamp}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{ANALYSIS_TYPE_INFERENCE}}/",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{ANALYSIS_TYPE_INFERENCE}}",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update autogating inference analysis details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"options\":\r\n  { \r\n    \"cloneGatesFromParent\": false,\r\n    \"fcsFileIds\": [{{fcs_file_id_1}}, {{fcs_file_id_2}}, {{fcs_file_id_3}}],\r\n    \"trainedModelAnalysisId\": {{NEW_CREATED_ANALYSIS_ID}}\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/auto_gate_inference/{{NEW_CREATED_INFERENCE_ANALYSIS_ID}}",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"auto_gate_inference",
+						"{{NEW_CREATED_INFERENCE_ANALYSIS_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Run autogating inference analysis",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 202\"] = responseCode.code === 202;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{NEW_CREATED_INFERENCE_ANALYSIS_ID}}/run",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{NEW_CREATED_INFERENCE_ANALYSIS_ID}}",
+						"run"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show autogating inference analysis status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";",
+							"",
+							"function sleep(milliseconds) {",
+							"  var start = new Date().getTime();",
+							"  for (var i = 0; i < 1e7; i++) {",
+							"    if ((new Date().getTime() - start) > milliseconds) {",
+							"      break;",
+							"    }",
+							"  }",
+							"}",
+							"",
+							"var data = JSON.parse(responseBody);",
+							"if (data.advanced_analyses_status.status !== \"Completed\") {",
+							"  sleep(2000);",
+							"  postman.setNextRequest(\"Show autogating inference analysis status\");",
+							"  console.log(\"Will run 'Show autogating inference analysis status' once again and current status is: \"+data.advanced_analyses_status.status);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{NEW_CREATED_INFERENCE_ANALYSIS_ID}}/status",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{NEW_CREATED_INFERENCE_ANALYSIS_ID}}",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List autogating inference analyses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;\r",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";\r",
+							"/*var data = JSON.parse(responseBody);\r",
+							"\r",
+							"for (var i =0; i < data.autogateinference.length; i++){\r",
+							"    if (data.autogateinference[i].name == \"Selenium's Autogating inference analysis 1\")\r",
+							"    {\r",
+							"       pm.environment.set(\"ANALYSIS_ID_INFERENCE\", data.autogateinference[i].id);\r",
+							"        break;\r",
+							"    }\r",
+							"}*/\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{ANALYSIS_TYPE_INFERENCE}}",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{ANALYSIS_TYPE_INFERENCE}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show autogating inference analysis details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{NEW_CREATED_INFERENCE_ANALYSIS_ID}}?include_settings=1",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{NEW_CREATED_INFERENCE_ANALYSIS_ID}}"
+					],
+					"query": [
+						{
+							"key": "include_settings",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create autogating train analysis for delete test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;\r",
+							"var data = JSON.parse(responseBody); \r",
+							"pm.environment.set(\"NEW_CREATED_ANALYSIS_ID_FOR_USING_IN_DELETE_CALL\", data.auto_gate.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  \"name\": \"API Autogating Analysis{{$timestamp}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{ANALYSIS_TYPE_TRAIN}}/",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{ANALYSIS_TYPE_TRAIN}}",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete autogating analysis",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{NEW_CREATED_ANALYSIS_ID_FOR_USING_IN_DELETE_CALL}}",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{NEW_CREATED_ANALYSIS_ID_FOR_USING_IN_DELETE_CALL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Copy autogating analysis settings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{NEW_CREATED_ANALYSIS_ID}}/copy_settings",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{NEW_CREATED_ANALYSIS_ID}}",
+						"copy_settings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rename autogating analysis",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"name\": \"API Automatic Gating Analysis - Rename\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}/advanced_analyses/{{NEW_CREATED_ANALYSIS_ID}}/rename",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}",
+						"advanced_analyses",
+						"{{NEW_CREATED_ANALYSIS_ID}}",
+						"rename"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Exp Permanently",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;",
+							"tests[\"HSTS header is present\"] = postman.getResponseHeader(\"Strict-Transport-Security\") === \"max-age=31622400; includeSubDomains; preload\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_jwt}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://{{cyto_server}}/cytobank/api/v1/experiments/{{cloned_exp_id}}",
+					"protocol": "https",
+					"host": [
+						"{{cyto_server}}"
+					],
+					"path": [
+						"cytobank",
+						"api",
+						"v1",
+						"experiments",
+						"{{cloned_exp_id}}"
+					]
+				},
+				"description": "Delete the experiment Permanently along with all its child eperiments."
+			},
+			"response": []
+		}
+	]
+}
